@@ -8,5 +8,5 @@ elif (test $result_len -eq 0);
   then echo "File Not Found"
   else
     echo "Contents of File $file_name: "
-    echo $(cat $file_path)
+    cat $file_path
 fi
