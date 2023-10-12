@@ -10,5 +10,5 @@ elif (test $result_len -eq 0);
     temp_file=$(mktemp)
     updated_text=$(cat $file_path | sed -e 's/error/warning/ig')
     echo "$updated_text" > "$temp_file"
-    mv  "$temp_file" "$file_path" && echo "ALL error STRINGS ARE CHANGED TO warning"  || echo "Unknown error"
+    mv  "$temp_file" "$file_path" && echo 'All "error" strings are changed to "warning"'   || echo "Unknown error"
 fi
