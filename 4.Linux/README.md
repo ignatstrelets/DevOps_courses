@@ -15,7 +15,7 @@ To set a deprecation period, use flag "-c" (e.g. 'bash 1_13.sh -c +5')
 
 Note: 
 
-Files to be removed are got via 'find' utility. 
+Files to be removed are searched via 'find' utility. 
 
 Use 'mtime' syntax to define age of files to be deleted.
 
