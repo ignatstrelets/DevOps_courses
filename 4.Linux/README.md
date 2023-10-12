@@ -3,7 +3,7 @@ Scripts 1_7 to 1_13 are using global search via 'find' utility.
 You need to have proper permissions (simply, to be authorized as 'root' or use 'sudo').
 
 # Description of 1_13
-Script 1_13 provides an option of email notification and deletion of deprecated temporary files that are n days old.
+Script 1_13 displays usage of disks on your host, also it provides an option of email notification and deletion of deprecated temporary files that are 'n' days old.
 
 SYNOPSIS
 
