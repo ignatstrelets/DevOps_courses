@@ -1,0 +1,39 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+# Use Alpine 3.8 Vagrant Box from 'https://app.vagrantup.com' for both instances
+  config.vm.box = "generic/alpine38"
+# First Instance is a Web Server
+  config.vm.define "webserver" do |webserver|
+# Set Host Name
+      webserver.vm.hostname = "webserver"
+# Set Host IP in Private Network
+      webserver.vm.network "private_network", ip: "192.168.4.4"
+# Use built-in NAT via Port Forwarding
+      webserver.vm.network "forwarded_port", guest: 80, host: 8888
+# Set Desirable CPUs and Memory Parameters
+      webserver.vm.provider :virtualbox do |web|
+        web.customize ["modifyvm", :id, "--memory", "1024"]
+        web.customize ["modifyvm", :id, "--cpus", "2"]
+        end
+# Use Custom Shell Script to Install Nginx (executed with root privileges by default)
+      webserver.vm.provision "shell",
+         path: "/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/shell/install_nginx.sh"
+  end
+# Second Instance is a Database
+  config.vm.define "database" do |database|
+# Set Host Name
+      database.vm.hostname = "database"
+# Set Host IP in Private Network
+      database.vm.network "private_network", ip: "192.168.4.5"
+      database.vm.provider :virtualbox do |db|
+# Set Desirable CPUs and Memory Parameters
+        db.customize ["modifyvm", :id, "--memory", "512"]
+        db.customize ["modifyvm", :id, "--cpus", "1"]
+        end
+# Use Custom Shell Script to Install SQLite (executed with root privileges by default)
+      database.vm.provision "shell",
+         path: "/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/shell/install_sqlite.sh"
+  end
+end

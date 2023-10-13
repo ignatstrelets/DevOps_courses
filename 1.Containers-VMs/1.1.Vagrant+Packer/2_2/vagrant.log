@@ -1,0 +1,2160 @@
+ INFO global: Vagrant version: 2.3.7
+ INFO global: Ruby version: 3.1.4
+ INFO global: RubyGems version: 3.3.26
+ INFO global: VAGRANT_INSTALLER_EMBEDDED_DIR="/opt/vagrant/embedded"
+ INFO global: VAGRANT_EXECUTABLE="/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/bin/vagrant"
+ INFO global: VAGRANT_INSTALLER_VERSION="2"
+ INFO global: VAGRANT_INSTALLER_ENV="1"
+ INFO global: VAGRANT_LOG="debug"
+ WARN global: resolv replacement has not been enabled!
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/synced_folders/nfs/plugin.rb
+ INFO manager: Registered plugin: NFS synced folders
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/synced_folders/rsync/plugin.rb
+ INFO manager: Registered plugin: RSync synced folders
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/synced_folders/smb/plugin.rb
+ INFO manager: Registered plugin: SMB synced folders
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/kernel_v2/plugin.rb
+ INFO manager: Registered plugin: kernel
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/pushes/ftp/plugin.rb
+ INFO manager: Registered plugin: ftp
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/pushes/noop/plugin.rb
+ INFO manager: Registered plugin: noop
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/pushes/heroku/plugin.rb
+ INFO manager: Registered plugin: heroku
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/pushes/local-exec/plugin.rb
+ INFO manager: Registered plugin: local-exec
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/pushes/atlas/plugin.rb
+ INFO manager: Registered plugin: atlas
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/docker/plugin.rb
+ INFO manager: Registered plugin: docker-provider
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb
+ INFO manager: Registered plugin: Hyper-V provider
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb
+ INFO manager: Registered plugin: VirtualBox provider
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/kernel_v1/plugin.rb
+ INFO manager: Registered plugin: kernel
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/provisioners/podman/plugin.rb
+ INFO manager: Registered plugin: podman
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/provisioners/docker/plugin.rb
+ INFO manager: Registered plugin: docker
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/provisioners/file/plugin.rb
+ INFO manager: Registered plugin: file
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/provisioners/shell/plugin.rb
+ INFO manager: Registered plugin: shell
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/provisioners/chef/plugin.rb
+ INFO manager: Registered plugin: chef
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/provisioners/ansible/plugin.rb
+ INFO manager: Registered plugin: ansible
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/provisioners/container/plugin.rb
+ INFO manager: Registered plugin: container
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/provisioners/salt/plugin.rb
+ INFO manager: Registered plugin: salt
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/provisioners/cfengine/plugin.rb
+ INFO manager: Registered plugin: CFEngine Provisioner
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/provisioners/puppet/plugin.rb
+ INFO manager: Registered plugin: puppet
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/provision/plugin.rb
+ INFO manager: Registered plugin: provision command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/destroy/plugin.rb
+ INFO manager: Registered plugin: destroy command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/init/plugin.rb
+ INFO manager: Registered plugin: init command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/snapshot/plugin.rb
+ INFO manager: Registered plugin: snapshot command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/validate/plugin.rb
+ INFO manager: Registered plugin: validate command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/box/plugin.rb
+ INFO manager: Registered plugin: box command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/autocomplete/plugin.rb
+ INFO manager: Registered plugin: autocomplete command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/winrm/plugin.rb
+ INFO manager: Registered plugin: winrm command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/resume/plugin.rb
+ INFO manager: Registered plugin: resume command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/suspend/plugin.rb
+ INFO manager: Registered plugin: suspend command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/plugin/plugin.rb
+ INFO manager: Registered plugin: plugin command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/halt/plugin.rb
+ INFO manager: Registered plugin: halt command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/provider/plugin.rb
+ INFO manager: Registered plugin: provider command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/rdp/plugin.rb
+ INFO manager: Registered plugin: rdp command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/status/plugin.rb
+ INFO manager: Registered plugin: status command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/ssh_config/plugin.rb
+ INFO manager: Registered plugin: ssh-config command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/winrm_config/plugin.rb
+ INFO manager: Registered plugin: winrm-config command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/reload/plugin.rb
+ INFO manager: Registered plugin: reload command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/powershell/plugin.rb
+ INFO manager: Registered plugin: powershell command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/cap/plugin.rb
+ INFO manager: Registered plugin: cap command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/push/plugin.rb
+ INFO manager: Registered plugin: push command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/list-commands/plugin.rb
+ INFO manager: Registered plugin: list-commands command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/ssh/plugin.rb
+ INFO manager: Registered plugin: ssh command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/version/plugin.rb
+ INFO manager: Registered plugin: version command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/up/plugin.rb
+ INFO manager: Registered plugin: up command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/cloud/plugin.rb
+ INFO manager: Registered plugin: vagrant-cloud
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/global-status/plugin.rb
+ INFO manager: Registered plugin: global-status command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/serve/plugin.rb
+ INFO manager: Registered plugin: start Vagrant server
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/port/plugin.rb
+ INFO manager: Registered plugin: port command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/login/plugin.rb
+ INFO manager: Registered plugin: vagrant-login
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/package/plugin.rb
+ INFO manager: Registered plugin: package command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/help/plugin.rb
+ INFO manager: Registered plugin: help command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/commands/upload/plugin.rb
+ INFO manager: Registered plugin: upload command
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/hosts/slackware/plugin.rb
+ INFO manager: Registered plugin: Slackware host
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/hosts/bsd/plugin.rb
+ INFO manager: Registered plugin: BSD host
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/hosts/freebsd/plugin.rb
+ INFO manager: Registered plugin: FreeBSD host
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/hosts/null/plugin.rb
+ INFO manager: Registered plugin: null host
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/hosts/void/plugin.rb
+ INFO manager: Registered plugin: Void host
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/hosts/linux/plugin.rb
+ INFO manager: Registered plugin: Linux host
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/hosts/arch/plugin.rb
+ INFO manager: Registered plugin: Arch host
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/hosts/darwin/plugin.rb
+ INFO manager: Registered plugin: Mac OS X host
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/hosts/windows/plugin.rb
+ INFO manager: Registered plugin: Windows host
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/hosts/redhat/plugin.rb
+ INFO manager: Registered plugin: Red Hat Enterprise Linux host
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/hosts/gentoo/plugin.rb
+ INFO manager: Registered plugin: Gentoo host
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/hosts/suse/plugin.rb
+ INFO manager: Registered plugin: SUSE host
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/hosts/alt/plugin.rb
+ INFO manager: Registered plugin: ALT Platform host
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/communicators/winrm/plugin.rb
+ INFO manager: Registered plugin: winrm communicator
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/communicators/winssh/plugin.rb
+ INFO manager: Registered plugin: windows ssh communicator
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/communicators/ssh/plugin.rb
+ INFO manager: Registered plugin: ssh communicator
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/alpine/plugin.rb
+ INFO manager: Registered plugin: Alpine guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/solaris11/plugin.rb
+ INFO manager: Registered plugin: Solaris 11 guest.
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/dragonflybsd/plugin.rb
+ INFO manager: Registered plugin: DragonFly BSD guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/pld/plugin.rb
+ INFO manager: Registered plugin: PLD Linux guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/amazon/plugin.rb
+ INFO manager: Registered plugin: Amazon Linux guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/mint/plugin.rb
+ INFO manager: Registered plugin: Mint guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/debian/plugin.rb
+ INFO manager: Registered plugin: Debian guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/rocky/plugin.rb
+ INFO manager: Registered plugin: Rocky guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/slackware/plugin.rb
+ INFO manager: Registered plugin: Slackware guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/centos/plugin.rb
+ INFO manager: Registered plugin: CentOS guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/esxi/plugin.rb
+ INFO manager: Registered plugin: ESXi guest.
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/netbsd/plugin.rb
+ INFO manager: Registered plugin: NetBSD guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/omnios/plugin.rb
+ INFO manager: Registered plugin: OmniOS guest.
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/alma/plugin.rb
+ INFO manager: Registered plugin: Alma guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/bsd/plugin.rb
+ INFO manager: Registered plugin: BSD-based guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/haiku/plugin.rb
+ INFO manager: Registered plugin: Haiku guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/fedora/plugin.rb
+ INFO manager: Registered plugin: Fedora guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/tinycore/plugin.rb
+ INFO manager: Registered plugin: TinyCore Linux guest.
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/atomic/plugin.rb
+ INFO manager: Registered plugin: Atomic Host guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/freebsd/plugin.rb
+ INFO manager: Registered plugin: FreeBSD guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/trisquel/plugin.rb
+ INFO manager: Registered plugin: Trisquel guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/smartos/plugin.rb
+ INFO manager: Registered plugin: SmartOS guest.
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/kali/plugin.rb
+ INFO manager: Registered plugin: Kali guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/linux/plugin.rb
+ INFO manager: Registered plugin: Linux guest.
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/arch/plugin.rb
+ INFO manager: Registered plugin: Arch guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/openbsd/plugin.rb
+ INFO manager: Registered plugin: OpenBSD guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/openwrt/plugin.rb
+ INFO manager: Registered plugin: OpenWrt guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/nixos/plugin.rb
+ INFO manager: Registered plugin: NixOS guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/photon/plugin.rb
+ INFO manager: Registered plugin: VMware Photon guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/darwin/plugin.rb
+ INFO manager: Registered plugin: Darwin guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/funtoo/plugin.rb
+ INFO manager: Registered plugin: Funtoo guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/windows/plugin.rb
+ INFO manager: Registered plugin: Windows guest.
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/redhat/plugin.rb
+ INFO manager: Registered plugin: Red Hat Enterprise Linux guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/solaris/plugin.rb
+ INFO manager: Registered plugin: Solaris guest.
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/elementary/plugin.rb
+ INFO manager: Registered plugin: Elementary guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/gentoo/plugin.rb
+ INFO manager: Registered plugin: Gentoo guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/suse/plugin.rb
+ INFO manager: Registered plugin: SUSE guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/coreos/plugin.rb
+ INFO manager: Registered plugin: CoreOS guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/ubuntu/plugin.rb
+ INFO manager: Registered plugin: Ubuntu guest
+DEBUG global: Loading core plugin: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/guests/alt/plugin.rb
+ INFO manager: Registered plugin: ALT Platform guest
+ INFO vagrant: `vagrant` invoked: ["up", "--debug"]
+DEBUG vagrant: Creating Vagrant environment
+ INFO environment: Environment initialized (#<Vagrant::Environment:0x0000000106c03300>)
+ INFO environment:   - cwd: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2
+ INFO environment: Home path: /Users/motherwork/.vagrant.d
+DEBUG environment: Effective local data path: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant
+ INFO environment: Local data path: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant
+DEBUG environment: Creating: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant
+DEBUG manager: Enabling localized plugins
+ INFO manager: Plugins:
+DEBUG solution_file: new solution file instance plugin_file=/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/plugins.json solution_file=/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/bundler/local.sol
+DEBUG solution_file: missing file so skipping loading
+DEBUG bundler: solution file in use for init: <Vagrant::Bundler::SolutionFile:/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/plugins.json:/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/bundler/local.sol:invalid>
+DEBUG bundler: Generating new builtin set instance.
+DEBUG bundler: Generating new plugin set instance. Skip gems - []
+DEBUG bundler: generating solution set for configured plugins
+DEBUG bundler: Current generated plugin dependency list: []
+DEBUG bundler: resolving solution from available specification set
+DEBUG bundler: solution set for configured plugins has been resolved
+DEBUG bundler: activating solution set
+DEBUG bundler: Activating solution set: []
+DEBUG solution_file: plugin file does not exist, not storing solution
+DEBUG bundler: solution set stored to - <Vagrant::Bundler::SolutionFile:/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/plugins.json:/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/bundler/local.sol:invalid>
+ INFO manager: Loading plugins...
+DEBUG manager: Enabling globalized plugins
+ INFO manager: Plugins:
+DEBUG solution_file: new solution file instance plugin_file=/Users/motherwork/.vagrant.d/plugins.json solution_file=/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/bundler/global.sol
+DEBUG solution_file: missing file so skipping loading
+DEBUG bundler: solution file in use for init: <Vagrant::Bundler::SolutionFile:/Users/motherwork/.vagrant.d/plugins.json:/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/bundler/global.sol:invalid>
+DEBUG bundler: Generating new builtin set instance.
+DEBUG bundler: Generating new plugin set instance. Skip gems - []
+DEBUG bundler: generating solution set for configured plugins
+DEBUG bundler: Current generated plugin dependency list: []
+DEBUG bundler: resolving solution from available specification set
+DEBUG bundler: solution set for configured plugins has been resolved
+DEBUG bundler: activating solution set
+DEBUG bundler: Activating solution set: []
+DEBUG solution_file: plugin file does not exist, not storing solution
+DEBUG bundler: solution set stored to - <Vagrant::Bundler::SolutionFile:/Users/motherwork/.vagrant.d/plugins.json:/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/bundler/global.sol:invalid>
+ INFO manager: Loading plugins...
+ INFO loader: Set :root = ["#<Pathname:/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/Vagrantfile>"]
+DEBUG loader: Populating proc cache for #<Pathname:/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/Vagrantfile>
+DEBUG loader: Load procs for pathname: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/Vagrantfile
+ INFO loader: Loading configuration in order: [:home, :root]
+DEBUG loader: Loading from: root (evaluating)
+DEBUG loader: Configuration loaded successfully, finalizing and returning
+DEBUG push: finalizing
+ INFO base: VBoxManage path: VBoxManage
+DEBUG meta: validating LANG value for virtualbox cli commands
+ INFO subprocess: Starting process: ["/usr/bin/locale", "-a"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG meta: list of available C locales: ["en_US.US-ASCII", "en_US.UTF-8", "en_US.ISO8859-15", "en_US.ISO8859-1", "C", "POSIX"]
+DEBUG meta: valid variation found for LANG value: en_US.UTF-8
+DEBUG meta: LANG value set: "en_US.UTF-8"
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "--version"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG meta: Finding driver for VirtualBox version: 7.0.10
+ INFO meta: Using VirtualBox driver: VagrantPlugins::ProviderVirtualBox::Driver::Version_7_0
+ INFO base: VBoxManage path: VBoxManage
+DEBUG environment: Initial usable provider list: [[6, :virtualbox]]
+DEBUG environment: Priority sorted usable provider list: [:virtualbox]
+DEBUG environment: Preferred provider list: []
+DEBUG environment: Using provider `virtualbox` as it is the highest priority in the usable list.
+ INFO loader: Set "880_machine_webserver" = ["[\"2\", #<Proc:0x0000000106b08888 /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/Vagrantfile:8>]"]
+DEBUG loader: Populating proc cache for ["2", #<Proc:0x0000000106b08888 /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/Vagrantfile:8>]
+ INFO loader: Loading configuration in order: [:home, :root, "880_machine_webserver"]
+DEBUG loader: Loading from: root (cache)
+DEBUG loader: Loading from: 880_machine_webserver (evaluating)
+DEBUG provisioner: Provisioner defined: 
+DEBUG loader: Configuration loaded successfully, finalizing and returning
+DEBUG push: finalizing
+ INFO vmconfig: config class lookup for provider :virtualbox gave us base class: VagrantPlugins::ProviderVirtualBox::Config
+ INFO box_collection: Box found: generic/alpine38 (virtualbox)
+ INFO environment: Running hook: authenticate_box_url
+ INFO host: Autodetecting host type for [#<Vagrant::Environment: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2>]
+DEBUG host: Trying: slackware
+DEBUG host: Trying: freebsd
+DEBUG host: Trying: void
+DEBUG host: Trying: arch
+DEBUG host: Trying: darwin
+ INFO host: Detected: darwin!
+ INFO runner: Running action: authenticate_box_url #<Vagrant::Action::Builder:0x000000010a688a20>
+ INFO warden: Calling IN action: #<VagrantPlugins::CloudCommand::AddAuthentication:0x000000010664fb70>
+ WARN authenticate-box-url: Authentication token not found as GET parameter.
+ INFO warden: Calling OUT action: #<VagrantPlugins::CloudCommand::AddAuthentication:0x000000010664fb70>
+ INFO loader: Set :"1040_generic/alpine38_virtualbox" = ["#<Pathname:/Users/motherwork/.vagrant.d/boxes/generic-VAGRANTSLASH-alpine38/4.3.2/virtualbox/Vagrantfile>"]
+DEBUG loader: Populating proc cache for #<Pathname:/Users/motherwork/.vagrant.d/boxes/generic-VAGRANTSLASH-alpine38/4.3.2/virtualbox/Vagrantfile>
+DEBUG loader: Load procs for pathname: /Users/motherwork/.vagrant.d/boxes/generic-VAGRANTSLASH-alpine38/4.3.2/virtualbox/Vagrantfile
+ INFO loader: Loading configuration in order: [:"1040_generic/alpine38_virtualbox", :home, :root, "880_machine_webserver"]
+DEBUG loader: Loading from: 1040_generic/alpine38_virtualbox (evaluating)
+DEBUG loader: Loading from: 1040_generic/alpine38_virtualbox (evaluating)
+DEBUG loader: Loading from: root (cache)
+DEBUG loader: Loading from: 880_machine_webserver (cache)
+DEBUG loader: Configuration loaded successfully, finalizing and returning
+DEBUG push: finalizing
+ INFO vmconfig: config class lookup for provider :hyperv gave us base class: VagrantPlugins::HyperV::Config
+ INFO vmconfig: config class lookup for provider :libvirt gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name cpus=
+DEBUG dummy_config: setting instance variable name cpus
+DEBUG dummy_config: found name memory=
+DEBUG dummy_config: setting instance variable name memory
+DEBUG dummy_config: found name driver=
+DEBUG dummy_config: setting instance variable name driver
+DEBUG dummy_config: found name video_vram=
+DEBUG dummy_config: setting instance variable name video_vram
+DEBUG dummy_config: found name disk_bus=
+DEBUG dummy_config: setting instance variable name disk_bus
+ INFO vmconfig: config class lookup for provider :parallels gave us base class: Vagrant::Config::V2::DummyConfig
+ INFO vmconfig: config class lookup for provider :virtualbox gave us base class: VagrantPlugins::ProviderVirtualBox::Config
+ INFO vmconfig: config class lookup for provider :vmware_fusion gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: config class lookup for provider :vmware_workstation gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: config class lookup for provider :vmware_desktop gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO loader: Set :"880_vm_webserver_generic/alpine38_virtualbox" = ["[\"2\", #<Proc:0x000000010a6324e0>]"]
+DEBUG loader: Populating proc cache for ["2", #<Proc:0x000000010a6324e0>]
+ INFO loader: Loading configuration in order: [:"1040_generic/alpine38_virtualbox", :home, :root, "880_machine_webserver", :"880_vm_webserver_generic/alpine38_virtualbox"]
+DEBUG loader: Loading from: 1040_generic/alpine38_virtualbox (cache)
+DEBUG loader: Loading from: 1040_generic/alpine38_virtualbox (cache)
+DEBUG loader: Loading from: root (cache)
+DEBUG loader: Loading from: 880_machine_webserver (cache)
+DEBUG loader: Loading from: 880_vm_webserver_generic/alpine38_virtualbox (evaluating)
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+DEBUG loader: Configuration loaded successfully, finalizing and returning
+DEBUG push: finalizing
+ INFO vmconfig: config class lookup for provider :hyperv gave us base class: VagrantPlugins::HyperV::Config
+ INFO vmconfig: config class lookup for provider :libvirt gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name cpus=
+DEBUG dummy_config: setting instance variable name cpus
+DEBUG dummy_config: found name memory=
+DEBUG dummy_config: setting instance variable name memory
+DEBUG dummy_config: found name driver=
+DEBUG dummy_config: setting instance variable name driver
+DEBUG dummy_config: found name video_vram=
+DEBUG dummy_config: setting instance variable name video_vram
+DEBUG dummy_config: found name disk_bus=
+DEBUG dummy_config: setting instance variable name disk_bus
+ INFO vmconfig: config class lookup for provider :parallels gave us base class: Vagrant::Config::V2::DummyConfig
+ INFO vmconfig: config class lookup for provider :virtualbox gave us base class: VagrantPlugins::ProviderVirtualBox::Config
+ INFO vmconfig: config class lookup for provider :vmware_fusion gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: config class lookup for provider :vmware_workstation gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: config class lookup for provider :vmware_desktop gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO loader: Set "880_machine_database" = ["[\"2\", #<Proc:0x0000000106a1ec38 /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/Vagrantfile:25>]"]
+DEBUG loader: Populating proc cache for ["2", #<Proc:0x0000000106a1ec38 /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/Vagrantfile:25>]
+ INFO loader: Loading configuration in order: [:home, :root, "880_machine_database"]
+ WARN loader: Unknown config sources: ["880_machine_webserver", :"1040_generic/alpine38_virtualbox", :"880_vm_webserver_generic/alpine38_virtualbox"]
+DEBUG loader: Loading from: root (cache)
+DEBUG loader: Loading from: 880_machine_database (evaluating)
+DEBUG provisioner: Provisioner defined: 
+DEBUG loader: Configuration loaded successfully, finalizing and returning
+DEBUG push: finalizing
+ INFO vmconfig: config class lookup for provider :virtualbox gave us base class: VagrantPlugins::ProviderVirtualBox::Config
+ INFO box_collection: Box found: generic/alpine38 (virtualbox)
+ INFO environment: Running hook: authenticate_box_url
+ INFO runner: Running action: authenticate_box_url #<Vagrant::Action::Builder:0x000000010a8c0a68>
+ INFO warden: Calling IN action: #<VagrantPlugins::CloudCommand::AddAuthentication:0x000000010a931768>
+ WARN authenticate-box-url: Authentication token not found as GET parameter.
+ INFO warden: Calling OUT action: #<VagrantPlugins::CloudCommand::AddAuthentication:0x000000010a931768>
+ INFO loader: Set :"1040_generic/alpine38_virtualbox" = ["#<Pathname:/Users/motherwork/.vagrant.d/boxes/generic-VAGRANTSLASH-alpine38/4.3.2/virtualbox/Vagrantfile>"]
+ INFO loader: Loading configuration in order: [:"1040_generic/alpine38_virtualbox", :home, :root, "880_machine_database"]
+ WARN loader: Unknown config sources: ["880_machine_webserver", :"880_vm_webserver_generic/alpine38_virtualbox"]
+DEBUG loader: Loading from: 1040_generic/alpine38_virtualbox (cache)
+DEBUG loader: Loading from: 1040_generic/alpine38_virtualbox (cache)
+DEBUG loader: Loading from: root (cache)
+DEBUG loader: Loading from: 880_machine_database (cache)
+DEBUG loader: Configuration loaded successfully, finalizing and returning
+DEBUG push: finalizing
+ INFO vmconfig: config class lookup for provider :hyperv gave us base class: VagrantPlugins::HyperV::Config
+ INFO vmconfig: config class lookup for provider :libvirt gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name cpus=
+DEBUG dummy_config: setting instance variable name cpus
+DEBUG dummy_config: found name memory=
+DEBUG dummy_config: setting instance variable name memory
+DEBUG dummy_config: found name driver=
+DEBUG dummy_config: setting instance variable name driver
+DEBUG dummy_config: found name video_vram=
+DEBUG dummy_config: setting instance variable name video_vram
+DEBUG dummy_config: found name disk_bus=
+DEBUG dummy_config: setting instance variable name disk_bus
+ INFO vmconfig: config class lookup for provider :parallels gave us base class: Vagrant::Config::V2::DummyConfig
+ INFO vmconfig: config class lookup for provider :virtualbox gave us base class: VagrantPlugins::ProviderVirtualBox::Config
+ INFO vmconfig: config class lookup for provider :vmware_fusion gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: config class lookup for provider :vmware_workstation gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: config class lookup for provider :vmware_desktop gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO loader: Set :"880_vm_database_generic/alpine38_virtualbox" = ["[\"2\", #<Proc:0x000000010a6324e0>]"]
+ INFO loader: Loading configuration in order: [:"1040_generic/alpine38_virtualbox", :home, :root, "880_machine_database", :"880_vm_database_generic/alpine38_virtualbox"]
+ WARN loader: Unknown config sources: ["880_machine_webserver", :"880_vm_webserver_generic/alpine38_virtualbox"]
+DEBUG loader: Loading from: 1040_generic/alpine38_virtualbox (cache)
+DEBUG loader: Loading from: 1040_generic/alpine38_virtualbox (cache)
+DEBUG loader: Loading from: root (cache)
+DEBUG loader: Loading from: 880_machine_database (cache)
+DEBUG loader: Loading from: 880_vm_database_generic/alpine38_virtualbox (cache)
+DEBUG loader: Configuration loaded successfully, finalizing and returning
+DEBUG push: finalizing
+ INFO vmconfig: config class lookup for provider :hyperv gave us base class: VagrantPlugins::HyperV::Config
+ INFO vmconfig: config class lookup for provider :libvirt gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name cpus=
+DEBUG dummy_config: setting instance variable name cpus
+DEBUG dummy_config: found name memory=
+DEBUG dummy_config: setting instance variable name memory
+DEBUG dummy_config: found name driver=
+DEBUG dummy_config: setting instance variable name driver
+DEBUG dummy_config: found name video_vram=
+DEBUG dummy_config: setting instance variable name video_vram
+DEBUG dummy_config: found name disk_bus=
+DEBUG dummy_config: setting instance variable name disk_bus
+ INFO vmconfig: config class lookup for provider :parallels gave us base class: Vagrant::Config::V2::DummyConfig
+ INFO vmconfig: config class lookup for provider :virtualbox gave us base class: VagrantPlugins::ProviderVirtualBox::Config
+ INFO vmconfig: config class lookup for provider :vmware_fusion gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: config class lookup for provider :vmware_workstation gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: config class lookup for provider :vmware_desktop gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO environment: Running hook: environment_plugins_loaded
+ INFO runner: Running action: environment_plugins_loaded #<Vagrant::Action::Builder:0x000000010a90aaf0>
+ INFO environment: Running hook: environment_load
+ INFO runner: Running action: environment_load #<Vagrant::Action::Builder:0x000000010a980228>
+DEBUG checkpoint_client: starting plugin check
+ INFO cli: CLI: [] "up" []
+DEBUG checkpoint_client: plugin check complete
+DEBUG cli: Invoking command class: VagrantPlugins::CommandUp::Command []
+DEBUG checkpoint_client: no information received from checkpoint
+DEBUG command: 'Up' each target VM...
+DEBUG command: Getting target VMs for command. Arguments:
+DEBUG command:  -- names: ["webserver", "database"]
+DEBUG command:  -- options: {:provider=>nil}
+DEBUG command: Finding machine that match name: webserver
+ INFO command: Active machine found with name webserver. Using provider: virtualbox
+ INFO environment: Getting machine: webserver (virtualbox)
+ INFO environment: Uncached load of machine.
+ INFO base: VBoxManage path: VBoxManage
+DEBUG meta: Finding driver for VirtualBox version: 7.0.10
+ INFO meta: Using VirtualBox driver: VagrantPlugins::ProviderVirtualBox::Driver::Version_7_0
+ INFO base: VBoxManage path: VBoxManage
+ INFO loader: Set "880_machine_webserver" = ["[\"2\", #<Proc:0x0000000106b08888 /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/Vagrantfile:8>]"]
+ INFO loader: Loading configuration in order: [:home, :root, "880_machine_webserver"]
+ WARN loader: Unknown config sources: [:"1040_generic/alpine38_virtualbox", :"880_vm_webserver_generic/alpine38_virtualbox", "880_machine_database", :"880_vm_database_generic/alpine38_virtualbox"]
+DEBUG loader: Loading from: root (cache)
+DEBUG loader: Loading from: 880_machine_webserver (cache)
+DEBUG loader: Configuration loaded successfully, finalizing and returning
+DEBUG push: finalizing
+ INFO vmconfig: config class lookup for provider :virtualbox gave us base class: VagrantPlugins::ProviderVirtualBox::Config
+ INFO box_collection: Box found: generic/alpine38 (virtualbox)
+ INFO environment: Running hook: authenticate_box_url
+ INFO runner: Running action: authenticate_box_url #<Vagrant::Action::Builder:0x000000010aa2a638>
+ INFO warden: Calling IN action: #<VagrantPlugins::CloudCommand::AddAuthentication:0x000000010aa80178>
+ WARN authenticate-box-url: Authentication token not found as GET parameter.
+ INFO warden: Calling OUT action: #<VagrantPlugins::CloudCommand::AddAuthentication:0x000000010aa80178>
+ INFO loader: Set :"1040_generic/alpine38_virtualbox" = ["#<Pathname:/Users/motherwork/.vagrant.d/boxes/generic-VAGRANTSLASH-alpine38/4.3.2/virtualbox/Vagrantfile>"]
+ INFO loader: Loading configuration in order: [:"1040_generic/alpine38_virtualbox", :home, :root, "880_machine_webserver"]
+ WARN loader: Unknown config sources: [:"880_vm_webserver_generic/alpine38_virtualbox", "880_machine_database", :"880_vm_database_generic/alpine38_virtualbox"]
+DEBUG loader: Loading from: 1040_generic/alpine38_virtualbox (cache)
+DEBUG loader: Loading from: 1040_generic/alpine38_virtualbox (cache)
+DEBUG loader: Loading from: root (cache)
+DEBUG loader: Loading from: 880_machine_webserver (cache)
+DEBUG loader: Configuration loaded successfully, finalizing and returning
+DEBUG push: finalizing
+ INFO vmconfig: config class lookup for provider :hyperv gave us base class: VagrantPlugins::HyperV::Config
+ INFO vmconfig: config class lookup for provider :libvirt gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name cpus=
+DEBUG dummy_config: setting instance variable name cpus
+DEBUG dummy_config: found name memory=
+DEBUG dummy_config: setting instance variable name memory
+DEBUG dummy_config: found name driver=
+DEBUG dummy_config: setting instance variable name driver
+DEBUG dummy_config: found name video_vram=
+DEBUG dummy_config: setting instance variable name video_vram
+DEBUG dummy_config: found name disk_bus=
+DEBUG dummy_config: setting instance variable name disk_bus
+ INFO vmconfig: config class lookup for provider :parallels gave us base class: Vagrant::Config::V2::DummyConfig
+ INFO vmconfig: config class lookup for provider :virtualbox gave us base class: VagrantPlugins::ProviderVirtualBox::Config
+ INFO vmconfig: config class lookup for provider :vmware_fusion gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: config class lookup for provider :vmware_workstation gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: config class lookup for provider :vmware_desktop gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO loader: Set :"880_vm_webserver_generic/alpine38_virtualbox" = ["[\"2\", #<Proc:0x000000010a6324e0>]"]
+ INFO loader: Loading configuration in order: [:"1040_generic/alpine38_virtualbox", :home, :root, "880_machine_webserver", :"880_vm_webserver_generic/alpine38_virtualbox"]
+ WARN loader: Unknown config sources: ["880_machine_database", :"880_vm_database_generic/alpine38_virtualbox"]
+DEBUG loader: Loading from: 1040_generic/alpine38_virtualbox (cache)
+DEBUG loader: Loading from: 1040_generic/alpine38_virtualbox (cache)
+DEBUG loader: Loading from: root (cache)
+DEBUG loader: Loading from: 880_machine_webserver (cache)
+DEBUG loader: Loading from: 880_vm_webserver_generic/alpine38_virtualbox (cache)
+DEBUG loader: Configuration loaded successfully, finalizing and returning
+DEBUG push: finalizing
+ INFO vmconfig: config class lookup for provider :hyperv gave us base class: VagrantPlugins::HyperV::Config
+ INFO vmconfig: config class lookup for provider :libvirt gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name cpus=
+DEBUG dummy_config: setting instance variable name cpus
+DEBUG dummy_config: found name memory=
+DEBUG dummy_config: setting instance variable name memory
+DEBUG dummy_config: found name driver=
+DEBUG dummy_config: setting instance variable name driver
+DEBUG dummy_config: found name video_vram=
+DEBUG dummy_config: setting instance variable name video_vram
+DEBUG dummy_config: found name disk_bus=
+DEBUG dummy_config: setting instance variable name disk_bus
+ INFO vmconfig: config class lookup for provider :parallels gave us base class: Vagrant::Config::V2::DummyConfig
+ INFO vmconfig: config class lookup for provider :virtualbox gave us base class: VagrantPlugins::ProviderVirtualBox::Config
+ INFO vmconfig: config class lookup for provider :vmware_fusion gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: config class lookup for provider :vmware_workstation gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: config class lookup for provider :vmware_desktop gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: looking up provider config for: :virtualbox
+ INFO vmconfig: provider config value that was stored: #<VagrantPlugins::ProviderVirtualBox::Config:0x000000010ab49d20 @auto_nat_dns_proxy=true, @check_guest_additions=true, @customizations=[["pre-boot", ["modifyvm", :id, "--vram", 256]], ["pre-boot", ["modifyvm", :id, "--cpus", 2]], ["pre-boot", ["modifyvm", :id, "--memory", 2048]], ["pre-boot", ["modifyvm", :id, "--memory", "1024"]], ["pre-boot", ["modifyvm", :id, "--cpus", "2"]]], @default_nic_type=nil, @destroy_unused_network_interfaces=false, @functional_vboxsf=true, @name=nil, @network_adapters={1=>[:nat, {}]}, @gui=false, @linked_clone=false, @linked_clone_snapshot=nil, @__invalid_methods=#<Set: {}>>
+ INFO machine: Initializing machine: webserver
+ INFO machine:   - Provider: VagrantPlugins::ProviderVirtualBox::Provider
+ INFO machine:   - Box: #<Vagrant::Box:0x000000010ab02740>
+ INFO machine:   - Data dir: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/machines/webserver/virtualbox
+DEBUG virtualbox: Instantiating the driver for machine ID: "3c26cdfb-19b3-47b6-9596-d396148c44c0"
+ INFO base: VBoxManage path: VBoxManage
+DEBUG meta: Finding driver for VirtualBox version: 7.0.10
+ INFO meta: Using VirtualBox driver: VagrantPlugins::ProviderVirtualBox::Driver::Version_7_0
+ INFO base: VBoxManage path: VBoxManage
+DEBUG virtualbox_7_0: validating LANG value for virtualbox cli commands
+ INFO subprocess: Starting process: ["/usr/bin/locale", "-a"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0: list of available C locales: ["en_US.US-ASCII", "en_US.UTF-8", "en_US.ISO8859-15", "en_US.ISO8859-1", "C", "POSIX"]
+DEBUG virtualbox_7_0: valid variation found for LANG value: en_US.UTF-8
+DEBUG virtualbox_7_0: LANG value set: "en_US.UTF-8"
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO interface: Machine: metadata ["provider", :virtualbox, {:target=>:webserver}]
+DEBUG command: Finding machine that match name: database
+ INFO command: Active machine found with name database. Using provider: virtualbox
+ INFO environment: Getting machine: database (virtualbox)
+ INFO environment: Uncached load of machine.
+ INFO base: VBoxManage path: VBoxManage
+DEBUG meta: Finding driver for VirtualBox version: 7.0.10
+ INFO meta: Using VirtualBox driver: VagrantPlugins::ProviderVirtualBox::Driver::Version_7_0
+ INFO base: VBoxManage path: VBoxManage
+ INFO loader: Set "880_machine_database" = ["[\"2\", #<Proc:0x0000000106a1ec38 /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/Vagrantfile:25>]"]
+ INFO loader: Loading configuration in order: [:home, :root, "880_machine_database"]
+ WARN loader: Unknown config sources: ["880_machine_webserver", :"1040_generic/alpine38_virtualbox", :"880_vm_webserver_generic/alpine38_virtualbox", :"880_vm_database_generic/alpine38_virtualbox"]
+DEBUG loader: Loading from: root (cache)
+DEBUG loader: Loading from: 880_machine_database (cache)
+DEBUG loader: Configuration loaded successfully, finalizing and returning
+DEBUG push: finalizing
+ INFO vmconfig: config class lookup for provider :virtualbox gave us base class: VagrantPlugins::ProviderVirtualBox::Config
+ INFO box_collection: Box found: generic/alpine38 (virtualbox)
+ INFO environment: Running hook: authenticate_box_url
+ INFO runner: Running action: authenticate_box_url #<Vagrant::Action::Builder:0x000000010a6cc1d0>
+ INFO warden: Calling IN action: #<VagrantPlugins::CloudCommand::AddAuthentication:0x000000010a802680>
+ WARN authenticate-box-url: Authentication token not found as GET parameter.
+ INFO warden: Calling OUT action: #<VagrantPlugins::CloudCommand::AddAuthentication:0x000000010a802680>
+ INFO loader: Set :"1040_generic/alpine38_virtualbox" = ["#<Pathname:/Users/motherwork/.vagrant.d/boxes/generic-VAGRANTSLASH-alpine38/4.3.2/virtualbox/Vagrantfile>"]
+ INFO loader: Loading configuration in order: [:"1040_generic/alpine38_virtualbox", :home, :root, "880_machine_database"]
+ WARN loader: Unknown config sources: ["880_machine_webserver", :"880_vm_webserver_generic/alpine38_virtualbox", :"880_vm_database_generic/alpine38_virtualbox"]
+DEBUG loader: Loading from: 1040_generic/alpine38_virtualbox (cache)
+DEBUG loader: Loading from: 1040_generic/alpine38_virtualbox (cache)
+DEBUG loader: Loading from: root (cache)
+DEBUG loader: Loading from: 880_machine_database (cache)
+DEBUG loader: Configuration loaded successfully, finalizing and returning
+DEBUG push: finalizing
+ INFO vmconfig: config class lookup for provider :hyperv gave us base class: VagrantPlugins::HyperV::Config
+ INFO vmconfig: config class lookup for provider :libvirt gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name cpus=
+DEBUG dummy_config: setting instance variable name cpus
+DEBUG dummy_config: found name memory=
+DEBUG dummy_config: setting instance variable name memory
+DEBUG dummy_config: found name driver=
+DEBUG dummy_config: setting instance variable name driver
+DEBUG dummy_config: found name video_vram=
+DEBUG dummy_config: setting instance variable name video_vram
+DEBUG dummy_config: found name disk_bus=
+DEBUG dummy_config: setting instance variable name disk_bus
+ INFO vmconfig: config class lookup for provider :parallels gave us base class: Vagrant::Config::V2::DummyConfig
+ INFO vmconfig: config class lookup for provider :virtualbox gave us base class: VagrantPlugins::ProviderVirtualBox::Config
+ INFO vmconfig: config class lookup for provider :vmware_fusion gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: config class lookup for provider :vmware_workstation gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: config class lookup for provider :vmware_desktop gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO loader: Set :"880_vm_database_generic/alpine38_virtualbox" = ["[\"2\", #<Proc:0x000000010a6324e0>]"]
+ INFO loader: Loading configuration in order: [:"1040_generic/alpine38_virtualbox", :home, :root, "880_machine_database", :"880_vm_database_generic/alpine38_virtualbox"]
+ WARN loader: Unknown config sources: ["880_machine_webserver", :"880_vm_webserver_generic/alpine38_virtualbox"]
+DEBUG loader: Loading from: 1040_generic/alpine38_virtualbox (cache)
+DEBUG loader: Loading from: 1040_generic/alpine38_virtualbox (cache)
+DEBUG loader: Loading from: root (cache)
+DEBUG loader: Loading from: 880_machine_database (cache)
+DEBUG loader: Loading from: 880_vm_database_generic/alpine38_virtualbox (cache)
+DEBUG loader: Configuration loaded successfully, finalizing and returning
+DEBUG push: finalizing
+ INFO vmconfig: config class lookup for provider :hyperv gave us base class: VagrantPlugins::HyperV::Config
+ INFO vmconfig: config class lookup for provider :libvirt gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name cpus=
+DEBUG dummy_config: setting instance variable name cpus
+DEBUG dummy_config: found name memory=
+DEBUG dummy_config: setting instance variable name memory
+DEBUG dummy_config: found name driver=
+DEBUG dummy_config: setting instance variable name driver
+DEBUG dummy_config: found name video_vram=
+DEBUG dummy_config: setting instance variable name video_vram
+DEBUG dummy_config: found name disk_bus=
+DEBUG dummy_config: setting instance variable name disk_bus
+ INFO vmconfig: config class lookup for provider :parallels gave us base class: Vagrant::Config::V2::DummyConfig
+ INFO vmconfig: config class lookup for provider :virtualbox gave us base class: VagrantPlugins::ProviderVirtualBox::Config
+ INFO vmconfig: config class lookup for provider :vmware_fusion gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: config class lookup for provider :vmware_workstation gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: config class lookup for provider :vmware_desktop gave us base class: Vagrant::Config::V2::DummyConfig
+DEBUG dummy_config: found name whitelist_verified=
+DEBUG dummy_config: setting instance variable name whitelist_verified
+DEBUG dummy_config: found name functional_hgfs=
+DEBUG dummy_config: setting instance variable name functional_hgfs
+DEBUG dummy_config: found name gui=
+DEBUG dummy_config: setting instance variable name gui
+ INFO vmconfig: looking up provider config for: :virtualbox
+ INFO vmconfig: provider config value that was stored: #<VagrantPlugins::ProviderVirtualBox::Config:0x000000010ab4a608 @auto_nat_dns_proxy=true, @check_guest_additions=true, @customizations=[["pre-boot", ["modifyvm", :id, "--vram", 256]], ["pre-boot", ["modifyvm", :id, "--cpus", 2]], ["pre-boot", ["modifyvm", :id, "--memory", 2048]], ["pre-boot", ["modifyvm", :id, "--memory", "512"]], ["pre-boot", ["modifyvm", :id, "--cpus", "1"]]], @default_nic_type=nil, @destroy_unused_network_interfaces=false, @functional_vboxsf=true, @name=nil, @network_adapters={1=>[:nat, {}]}, @gui=false, @linked_clone=false, @linked_clone_snapshot=nil, @__invalid_methods=#<Set: {}>>
+ INFO machine: Initializing machine: database
+ INFO machine:   - Provider: VagrantPlugins::ProviderVirtualBox::Provider
+ INFO machine:   - Box: #<Vagrant::Box:0x000000010a922920>
+ INFO machine:   - Data dir: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/machines/database/virtualbox
+DEBUG virtualbox: Instantiating the driver for machine ID: "c9641771-e6b5-405e-b89e-b4f1f86cb09a"
+ INFO base: VBoxManage path: VBoxManage
+DEBUG meta: Finding driver for VirtualBox version: 7.0.10
+ INFO meta: Using VirtualBox driver: VagrantPlugins::ProviderVirtualBox::Driver::Version_7_0
+ INFO base: VBoxManage path: VBoxManage
+DEBUG virtualbox_7_0: validating LANG value for virtualbox cli commands
+ INFO subprocess: Starting process: ["/usr/bin/locale", "-a"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0: list of available C locales: ["en_US.US-ASCII", "en_US.UTF-8", "en_US.ISO8859-15", "en_US.ISO8859-1", "C", "POSIX"]
+DEBUG virtualbox_7_0: valid variation found for LANG value: en_US.UTF-8
+DEBUG virtualbox_7_0: LANG value set: "en_US.UTF-8"
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "c9641771-e6b5-405e-b89e-b4f1f86cb09a"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "c9641771-e6b5-405e-b89e-b4f1f86cb09a", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO interface: Machine: metadata ["provider", :virtualbox, {:target=>:database}]
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO command: With machine: webserver (#<VagrantPlugins::ProviderVirtualBox::Provider:0x000000010a6b7d48 @logger=#<Log4r::Logger:0x000000010a6b7c58 @fullname="vagrant::provider::virtualbox", @outputters=[], @additive=true, @name="virtualbox", @path="vagrant::provider", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @machine=#<Vagrant::Machine: webserver (VagrantPlugins::ProviderVirtualBox::Provider)>, @driver=#<VagrantPlugins::ProviderVirtualBox::Driver::Meta:0x000000010a776b58 @logger=#<Log4r::Logger:0x000000010a8423c0 @fullname="vagrant::provider::virtualbox::meta", @outputters=[], @additive=true, @name="meta", @path="vagrant::provider::virtualbox", @parent=#<Log4r::Logger:0x000000010a6b7c58 @fullname="vagrant::provider::virtualbox", @outputters=[], @additive=true, @name="virtualbox", @path="vagrant::provider", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @level=2, @trace=false>, @interrupted=false, @vboxmanage_path="VBoxManage", @uuid="3c26cdfb-19b3-47b6-9596-d396148c44c0", @driver=#<VagrantPlugins::ProviderVirtualBox::Driver::Version_7_0:0x000000010a7d9fc8 @logger=#<Log4r::Logger:0x000000010a92b228 @fullname="vagrant::provider::virtualbox_7_0", @outputters=[], @additive=true, @name="virtualbox_7_0", @path="vagrant::provider", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @interrupted=false, @vboxmanage_path="VBoxManage", @uuid="3c26cdfb-19b3-47b6-9596-d396148c44c0", @env_lang={:LANG=>"en_US.UTF-8"}>, @version="7.0.10">, @cap_logger=#<Log4r::Logger:0x000000010660d068 @fullname="vagrant::capability_host::vagrantplugins::providervirtualbox::provider", @outputters=[], @additive=true, @name="provider", @path="vagrant::capability_host::vagrantplugins::providervirtualbox", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @cap_host_chain=[[:virtualbox, #<#<Class:0x00000001066146b0>:0x0000000106c19308>]], @cap_args=[#<Vagrant::Machine: webserver (VagrantPlugins::ProviderVirtualBox::Provider)>], @cap_caps={:docker=>#<Vagrant::Registry:0x000000010660f0e8 @items={:public_address=>#<Proc:0x0000000106b5b628 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/docker/plugin.rb:60>, :proxy_machine=>#<Proc:0x0000000106b5b560 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/docker/plugin.rb:65>, :has_communicator=>#<Proc:0x0000000106b5b498 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/docker/plugin.rb:70>}, @results_cache={}>, :hyperv=>#<Vagrant::Registry:0x000000010660e648 @items={:public_address=>#<Proc:0x000000010a7bb730 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:25>, :snapshot_list=>#<Proc:0x000000010a7bb6b8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:30>, :configure_disks=>#<Proc:0x000000010a7bb690 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:35>, :cleanup_disks=>#<Proc:0x000000010a7bb640 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:40>, :validate_disk_ext=>#<Proc:0x000000010a7bb618 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:45>, :default_disk_exts=>#<Proc:0x000000010a7bb5f0 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:50>, :set_default_disk_ext=>#<Proc:0x000000010a7bb5c8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:55>}, @results_cache={}>, :virtualbox=>#<Vagrant::Registry:0x000000010660e468 @items={:forwarded_ports=>#<Proc:0x0000000106b69e80 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:27>, :nic_mac_addresses=>#<Proc:0x0000000106b69e58 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:32>, :public_address=>#<Proc:0x0000000106b69e30 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:37>, :configure_disks=>#<Proc:0x0000000106b69e08 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:42>, :cleanup_disks=>#<Proc:0x0000000106b69de0 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:47>, :validate_disk_ext=>#<Proc:0x0000000106b69db8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:52>, :default_disk_exts=>#<Proc:0x0000000106b69d90 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:57>, :set_default_disk_ext=>#<Proc:0x0000000106b69d68 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:62>, :snapshot_list=>#<Proc:0x0000000106b69d40 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:67>}, @results_cache={}>}>)
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "c9641771-e6b5-405e-b89e-b4f1f86cb09a", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "c9641771-e6b5-405e-b89e-b4f1f86cb09a", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO command: With machine: database (#<VagrantPlugins::ProviderVirtualBox::Provider:0x000000010a628260 @logger=#<Log4r::Logger:0x000000010a6281e8 @fullname="vagrant::provider::virtualbox", @outputters=[], @additive=true, @name="virtualbox", @path="vagrant::provider", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @machine=#<Vagrant::Machine: database (VagrantPlugins::ProviderVirtualBox::Provider)>, @driver=#<VagrantPlugins::ProviderVirtualBox::Driver::Meta:0x000000010a6b4148 @logger=#<Log4r::Logger:0x000000010a7b2888 @fullname="vagrant::provider::virtualbox::meta", @outputters=[], @additive=true, @name="meta", @path="vagrant::provider::virtualbox", @parent=#<Log4r::Logger:0x000000010a6281e8 @fullname="vagrant::provider::virtualbox", @outputters=[], @additive=true, @name="virtualbox", @path="vagrant::provider", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @level=2, @trace=false>, @interrupted=false, @vboxmanage_path="VBoxManage", @uuid="c9641771-e6b5-405e-b89e-b4f1f86cb09a", @driver=#<VagrantPlugins::ProviderVirtualBox::Driver::Version_7_0:0x000000010a86ab90 @logger=#<Log4r::Logger:0x000000010a97a6c0 @fullname="vagrant::provider::virtualbox_7_0", @outputters=[], @additive=true, @name="virtualbox_7_0", @path="vagrant::provider", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @interrupted=false, @vboxmanage_path="VBoxManage", @uuid="c9641771-e6b5-405e-b89e-b4f1f86cb09a", @env_lang={:LANG=>"en_US.UTF-8"}>, @version="7.0.10">, @cap_logger=#<Log4r::Logger:0x0000000106bf0110 @fullname="vagrant::capability_host::vagrantplugins::providervirtualbox::provider", @outputters=[], @additive=true, @name="provider", @path="vagrant::capability_host::vagrantplugins::providervirtualbox", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @cap_host_chain=[[:virtualbox, #<#<Class:0x0000000106bf3e28>:0x000000010a651db8>]], @cap_args=[#<Vagrant::Machine: database (VagrantPlugins::ProviderVirtualBox::Provider)>], @cap_caps={:docker=>#<Vagrant::Registry:0x0000000106bf2c30 @items={:public_address=>#<Proc:0x0000000106b5b628 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/docker/plugin.rb:60>, :proxy_machine=>#<Proc:0x0000000106b5b560 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/docker/plugin.rb:65>, :has_communicator=>#<Proc:0x0000000106b5b498 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/docker/plugin.rb:70>}, @results_cache={}>, :hyperv=>#<Vagrant::Registry:0x0000000106bf2af0 @items={:public_address=>#<Proc:0x000000010a7bb730 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:25>, :snapshot_list=>#<Proc:0x000000010a7bb6b8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:30>, :configure_disks=>#<Proc:0x000000010a7bb690 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:35>, :cleanup_disks=>#<Proc:0x000000010a7bb640 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:40>, :validate_disk_ext=>#<Proc:0x000000010a7bb618 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:45>, :default_disk_exts=>#<Proc:0x000000010a7bb5f0 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:50>, :set_default_disk_ext=>#<Proc:0x000000010a7bb5c8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:55>}, @results_cache={}>, :virtualbox=>#<Vagrant::Registry:0x0000000106bf1bf0 @items={:forwarded_ports=>#<Proc:0x0000000106b69e80 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:27>, :nic_mac_addresses=>#<Proc:0x0000000106b69e58 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:32>, :public_address=>#<Proc:0x0000000106b69e30 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:37>, :configure_disks=>#<Proc:0x0000000106b69e08 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:42>, :cleanup_disks=>#<Proc:0x0000000106b69de0 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:47>, :validate_disk_ext=>#<Proc:0x0000000106b69db8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:52>, :default_disk_exts=>#<Proc:0x0000000106b69d90 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:57>, :set_default_disk_ext=>#<Proc:0x0000000106b69d68 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:62>, :snapshot_list=>#<Proc:0x0000000106b69d40 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:67>}, @results_cache={}>}>)
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "c9641771-e6b5-405e-b89e-b4f1f86cb09a", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 31999
+DEBUG subprocess: Exit status: 0
+DEBUG command: Getting target VMs for command. Arguments:
+DEBUG command:  -- names: ["webserver", "database"]
+DEBUG command:  -- options: {:provider=>nil}
+DEBUG command: Finding machine that match name: webserver
+ INFO command: Active machine found with name webserver. Using provider: virtualbox
+ INFO environment: Getting machine: webserver (virtualbox)
+ INFO environment: Returning cached machine: webserver (virtualbox)
+DEBUG command: Finding machine that match name: database
+ INFO command: Active machine found with name database. Using provider: virtualbox
+ INFO environment: Getting machine: database (virtualbox)
+ INFO environment: Returning cached machine: database (virtualbox)
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO command: With machine: webserver (#<VagrantPlugins::ProviderVirtualBox::Provider:0x000000010a6b7d48 @logger=#<Log4r::Logger:0x000000010a6b7c58 @fullname="vagrant::provider::virtualbox", @outputters=[], @additive=true, @name="virtualbox", @path="vagrant::provider", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @machine=#<Vagrant::Machine: webserver (VagrantPlugins::ProviderVirtualBox::Provider)>, @driver=#<VagrantPlugins::ProviderVirtualBox::Driver::Meta:0x000000010a776b58 @logger=#<Log4r::Logger:0x000000010a8423c0 @fullname="vagrant::provider::virtualbox::meta", @outputters=[], @additive=true, @name="meta", @path="vagrant::provider::virtualbox", @parent=#<Log4r::Logger:0x000000010a6b7c58 @fullname="vagrant::provider::virtualbox", @outputters=[], @additive=true, @name="virtualbox", @path="vagrant::provider", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @level=2, @trace=false>, @interrupted=false, @vboxmanage_path="VBoxManage", @uuid="3c26cdfb-19b3-47b6-9596-d396148c44c0", @driver=#<VagrantPlugins::ProviderVirtualBox::Driver::Version_7_0:0x000000010a7d9fc8 @logger=#<Log4r::Logger:0x000000010a92b228 @fullname="vagrant::provider::virtualbox_7_0", @outputters=[], @additive=true, @name="virtualbox_7_0", @path="vagrant::provider", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @interrupted=false, @vboxmanage_path="VBoxManage", @uuid="3c26cdfb-19b3-47b6-9596-d396148c44c0", @env_lang={:LANG=>"en_US.UTF-8"}>, @version="7.0.10">, @cap_logger=#<Log4r::Logger:0x000000010660d068 @fullname="vagrant::capability_host::vagrantplugins::providervirtualbox::provider", @outputters=[], @additive=true, @name="provider", @path="vagrant::capability_host::vagrantplugins::providervirtualbox", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @cap_host_chain=[[:virtualbox, #<#<Class:0x00000001066146b0>:0x0000000106c19308>]], @cap_args=[#<Vagrant::Machine: webserver (VagrantPlugins::ProviderVirtualBox::Provider)>], @cap_caps={:docker=>#<Vagrant::Registry:0x000000010660f0e8 @items={:public_address=>#<Proc:0x0000000106b5b628 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/docker/plugin.rb:60>, :proxy_machine=>#<Proc:0x0000000106b5b560 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/docker/plugin.rb:65>, :has_communicator=>#<Proc:0x0000000106b5b498 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/docker/plugin.rb:70>}, @results_cache={}>, :hyperv=>#<Vagrant::Registry:0x000000010660e648 @items={:public_address=>#<Proc:0x000000010a7bb730 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:25>, :snapshot_list=>#<Proc:0x000000010a7bb6b8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:30>, :configure_disks=>#<Proc:0x000000010a7bb690 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:35>, :cleanup_disks=>#<Proc:0x000000010a7bb640 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:40>, :validate_disk_ext=>#<Proc:0x000000010a7bb618 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:45>, :default_disk_exts=>#<Proc:0x000000010a7bb5f0 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:50>, :set_default_disk_ext=>#<Proc:0x000000010a7bb5c8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:55>}, @results_cache={}>, :virtualbox=>#<Vagrant::Registry:0x000000010660e468 @items={:forwarded_ports=>#<Proc:0x0000000106b69e80 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:27>, :nic_mac_addresses=>#<Proc:0x0000000106b69e58 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:32>, :public_address=>#<Proc:0x0000000106b69e30 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:37>, :configure_disks=>#<Proc:0x0000000106b69e08 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:42>, :cleanup_disks=>#<Proc:0x0000000106b69de0 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:47>, :validate_disk_ext=>#<Proc:0x0000000106b69db8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:52>, :default_disk_exts=>#<Proc:0x0000000106b69d90 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:57>, :set_default_disk_ext=>#<Proc:0x0000000106b69d68 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:62>, :snapshot_list=>#<Proc:0x0000000106b69d40 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:67>}, @results_cache={}>}>)
+ INFO interface: info: Bringing machine 'webserver' up with 'virtualbox' provider...
+Bringing machine 'webserver' up with 'virtualbox' provider...
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "c9641771-e6b5-405e-b89e-b4f1f86cb09a", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "c9641771-e6b5-405e-b89e-b4f1f86cb09a", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO command: With machine: database (#<VagrantPlugins::ProviderVirtualBox::Provider:0x000000010a628260 @logger=#<Log4r::Logger:0x000000010a6281e8 @fullname="vagrant::provider::virtualbox", @outputters=[], @additive=true, @name="virtualbox", @path="vagrant::provider", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @machine=#<Vagrant::Machine: database (VagrantPlugins::ProviderVirtualBox::Provider)>, @driver=#<VagrantPlugins::ProviderVirtualBox::Driver::Meta:0x000000010a6b4148 @logger=#<Log4r::Logger:0x000000010a7b2888 @fullname="vagrant::provider::virtualbox::meta", @outputters=[], @additive=true, @name="meta", @path="vagrant::provider::virtualbox", @parent=#<Log4r::Logger:0x000000010a6281e8 @fullname="vagrant::provider::virtualbox", @outputters=[], @additive=true, @name="virtualbox", @path="vagrant::provider", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @level=2, @trace=false>, @interrupted=false, @vboxmanage_path="VBoxManage", @uuid="c9641771-e6b5-405e-b89e-b4f1f86cb09a", @driver=#<VagrantPlugins::ProviderVirtualBox::Driver::Version_7_0:0x000000010a86ab90 @logger=#<Log4r::Logger:0x000000010a97a6c0 @fullname="vagrant::provider::virtualbox_7_0", @outputters=[], @additive=true, @name="virtualbox_7_0", @path="vagrant::provider", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @interrupted=false, @vboxmanage_path="VBoxManage", @uuid="c9641771-e6b5-405e-b89e-b4f1f86cb09a", @env_lang={:LANG=>"en_US.UTF-8"}>, @version="7.0.10">, @cap_logger=#<Log4r::Logger:0x0000000106bf0110 @fullname="vagrant::capability_host::vagrantplugins::providervirtualbox::provider", @outputters=[], @additive=true, @name="provider", @path="vagrant::capability_host::vagrantplugins::providervirtualbox", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @cap_host_chain=[[:virtualbox, #<#<Class:0x0000000106bf3e28>:0x000000010a651db8>]], @cap_args=[#<Vagrant::Machine: database (VagrantPlugins::ProviderVirtualBox::Provider)>], @cap_caps={:docker=>#<Vagrant::Registry:0x0000000106bf2c30 @items={:public_address=>#<Proc:0x0000000106b5b628 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/docker/plugin.rb:60>, :proxy_machine=>#<Proc:0x0000000106b5b560 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/docker/plugin.rb:65>, :has_communicator=>#<Proc:0x0000000106b5b498 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/docker/plugin.rb:70>}, @results_cache={}>, :hyperv=>#<Vagrant::Registry:0x0000000106bf2af0 @items={:public_address=>#<Proc:0x000000010a7bb730 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:25>, :snapshot_list=>#<Proc:0x000000010a7bb6b8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:30>, :configure_disks=>#<Proc:0x000000010a7bb690 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:35>, :cleanup_disks=>#<Proc:0x000000010a7bb640 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:40>, :validate_disk_ext=>#<Proc:0x000000010a7bb618 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:45>, :default_disk_exts=>#<Proc:0x000000010a7bb5f0 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:50>, :set_default_disk_ext=>#<Proc:0x000000010a7bb5c8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/hyperv/plugin.rb:55>}, @results_cache={}>, :virtualbox=>#<Vagrant::Registry:0x0000000106bf1bf0 @items={:forwarded_ports=>#<Proc:0x0000000106b69e80 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:27>, :nic_mac_addresses=>#<Proc:0x0000000106b69e58 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:32>, :public_address=>#<Proc:0x0000000106b69e30 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:37>, :configure_disks=>#<Proc:0x0000000106b69e08 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:42>, :cleanup_disks=>#<Proc:0x0000000106b69de0 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:47>, :validate_disk_ext=>#<Proc:0x0000000106b69db8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:52>, :default_disk_exts=>#<Proc:0x0000000106b69d90 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:57>, :set_default_disk_ext=>#<Proc:0x0000000106b69d68 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:62>, :snapshot_list=>#<Proc:0x0000000106b69d40 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/plugin.rb:67>}, @results_cache={}>}>)
+ INFO interface: info: Bringing machine 'database' up with 'virtualbox' provider...
+Bringing machine 'database' up with 'virtualbox' provider...
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "c9641771-e6b5-405e-b89e-b4f1f86cb09a", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO batch_action: Enabling parallelization by default.
+ INFO batch_action: Disabling parallelization because provider doesn't support it: virtualbox
+ INFO batch_action: Batch action will parallelize: false
+ INFO batch_action: Starting action: #<Vagrant::Machine:0x000000010a6226f8> up {:destroy_on_error=>true, :install_provider=>false, :parallel=>true, :provision_ignore_sentinel=>false, :provision_types=>nil}
+ INFO machine: Calling action: up on provider VirtualBox (3c26cdfb-19b3-47b6-9596-d396148c44c0)
+DEBUG environment: Attempting to acquire process-lock: machine-action-e244da6e1ca399d93d64fc9299a73309
+DEBUG environment: Attempting to acquire process-lock: dotlock
+ INFO environment: Acquired process lock: dotlock
+ INFO environment: Released process lock: dotlock
+ INFO environment: Acquired process lock: machine-action-e244da6e1ca399d93d64fc9299a73309
+ INFO interface: Machine: action ["up", "start", {:target=>:webserver}]
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x000000010a98bb50>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::CheckVirtualbox:0x000000010a862878>
+ INFO base: VBoxManage path: VBoxManage
+DEBUG meta: Finding driver for VirtualBox version: 7.0.10
+ INFO meta: Using VirtualBox driver: VagrantPlugins::ProviderVirtualBox::Driver::Version_7_0
+ INFO base: VBoxManage path: VBoxManage
+DEBUG virtualbox_7_0: validating LANG value for virtualbox cli commands
+ INFO subprocess: Starting process: ["/usr/bin/locale", "-a"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0: list of available C locales: ["en_US.US-ASCII", "en_US.UTF-8", "en_US.ISO8859-15", "en_US.ISO8859-1", "C", "POSIX"]
+DEBUG virtualbox_7_0: valid variation found for LANG value: en_US.UTF-8
+DEBUG virtualbox_7_0: LANG value set: "en_US.UTF-8"
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "list", "hostonlyifs"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Call:0x000000010a9135d8>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x0000000106604dc8>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::Created:0x000000010a76ffd8>
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 31999
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::Created:0x000000010a76ffd8>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Warden:0x000000010a950668>
+ INFO warden: Calling IN action: #<Proc:0x000000010aa38148 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling IN action: #<Proc:0x000000010a950550 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::ConfigValidate:0x000000010a9134c0>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Call:0x000000010a9133d0>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x000000010ab01110>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::Created:0x000000010abe1e90>
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::Created:0x000000010abe1e90>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Warden:0x000000010a832d30>
+ INFO warden: Calling IN action: #<Proc:0x000000010a913bc8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling IN action: #<Proc:0x000000010a832bc8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::EnvSet:0x000000010a913330>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::CheckVirtualbox:0x000000010a9132e0>
+ INFO base: VBoxManage path: VBoxManage
+DEBUG meta: Finding driver for VirtualBox version: 7.0.10
+ INFO meta: Using VirtualBox driver: VagrantPlugins::ProviderVirtualBox::Driver::Version_7_0
+ INFO base: VBoxManage path: VBoxManage
+DEBUG virtualbox_7_0: validating LANG value for virtualbox cli commands
+ INFO subprocess: Starting process: ["/usr/bin/locale", "-a"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0: list of available C locales: ["en_US.US-ASCII", "en_US.UTF-8", "en_US.ISO8859-15", "en_US.ISO8859-1", "C", "POSIX"]
+DEBUG virtualbox_7_0: valid variation found for LANG value: en_US.UTF-8
+DEBUG virtualbox_7_0: LANG value set: "en_US.UTF-8"
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "list", "hostonlyifs"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::ConfigValidate:0x000000010a96b4b8>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::BoxCheckOutdated:0x000000010a96b440>
+ INFO interface: output: Checking if box 'generic/alpine38' version '4.3.2' is up to date...
+ INFO interface: output: ==> webserver: Checking if box 'generic/alpine38' version '4.3.2' is up to date...
+==> webserver: Checking if box 'generic/alpine38' version '4.3.2' is up to date...
+ INFO box: box update check is under the interval threshold
+ INFO box: Skipping box update check
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Call:0x000000010a938950>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x000000010aa13c30>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::IsRunning:0x000000010ab30370>
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::IsRunning:0x000000010ab30370>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Warden:0x000000010a5ee290>
+ INFO warden: Calling IN action: #<Proc:0x000000010a901428 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Call:0x000000010a5ec198>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x000000010a9c2088>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::IsSaved:0x000000010aaf80d8>
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::IsSaved:0x000000010aaf80d8>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Warden:0x000000010a774f38>
+ INFO warden: Calling IN action: #<Proc:0x000000010aa093c0 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Call:0x000000010a774df8>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x000000010aa526d8>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::IsPaused:0x000000010a9b8bc8>
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::IsPaused:0x000000010a9b8bc8>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Warden:0x000000010ae10928>
+ INFO warden: Calling IN action: #<Proc:0x000000010ae230f0 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::CheckAccessible:0x000000010ae106a8>
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::CleanMachineFolder:0x000000010ae105b8>
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "list", "systemproperties"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 31999
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::SetName:0x000000010ae104c8>
+ INFO setname: Default name was already set before, not doing it again.
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::ClearForwardedPorts:0x000000010ae6b350>
+ INFO base: VBoxManage path: VBoxManage
+DEBUG meta: Finding driver for VirtualBox version: 7.0.10
+ INFO meta: Using VirtualBox driver: VagrantPlugins::ProviderVirtualBox::Driver::Version_7_0
+ INFO base: VBoxManage path: VBoxManage
+DEBUG virtualbox_7_0: read_forward_ports: uuid=3c26cdfb-19b3-47b6-9596-d396148c44c0 active_only=false
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0:   - [1, "ssh", 2222, 22, "127.0.0.1"]
+DEBUG virtualbox_7_0:   - [1, "tcp8888", 8888, 80, ""]
+ INFO interface: info: Clearing any previously set forwarded ports...
+ INFO interface: info: ==> webserver: Clearing any previously set forwarded ports...
+==> webserver: Clearing any previously set forwarded ports...
+DEBUG virtualbox_7_0: read_forward_ports: uuid=3c26cdfb-19b3-47b6-9596-d396148c44c0 active_only=false
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0:   - [1, "ssh", 2222, 22, "127.0.0.1"]
+DEBUG virtualbox_7_0:   - [1, "tcp8888", 8888, 80, ""]
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "modifyvm", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--natpf1", "delete", "ssh", "--natpf1", "delete", "tcp8888"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Provision:0x000000010ae6b2d8>
+ INFO provision: Checking provisioner sentinel file...
+ INFO provision: Sentinel found! Not provisioning.
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::EnvSet:0x000000010aed0890>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::PrepareForwardedPortCollisionParams:0x000000010aed07f0>
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "list", "vms"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0: read_forward_ports: uuid=c9641771-e6b5-405e-b89e-b4f1f86cb09a active_only=true
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "c9641771-e6b5-405e-b89e-b4f1f86cb09a", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0: read_forward_ports: uuid=3c26cdfb-19b3-47b6-9596-d396148c44c0 active_only=false
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::HandleForwardedPortCollisions:0x000000010aed0700>
+DEBUG environment: Attempting to acquire process-lock: fpcollision
+DEBUG environment: Attempting to acquire process-lock: dotlock
+ INFO environment: Acquired process lock: dotlock
+ INFO environment: Released process lock: dotlock
+ INFO environment: Acquired process lock: fpcollision
+ INFO handle_port_collisions: Detecting any forwarded port collisions...
+DEBUG handle_port_collisions: Extra in use: {}
+DEBUG handle_port_collisions: Remap: {}
+DEBUG handle_port_collisions: Repair: true
+ INFO environment: Released process lock: fpcollision
+DEBUG environment: Attempting to acquire process-lock: dotlock
+ INFO environment: Acquired process lock: dotlock
+ INFO environment: Released process lock: dotlock
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::PrepareNFSValidIds:0x000000010ae90100>
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "list", "vms"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling IN action: #<VagrantPlugins::SyncedFolderNFS::ActionCleanup:0x000000010aeeb708>
+DEBUG host: Searching for cap: nfs_prune
+DEBUG host: Checking in: darwin
+DEBUG host: Checking in: bsd
+DEBUG host: Found cap: nfs_prune in bsd
+ INFO nfs: NFS pruning. Valid IDs: ["3c26cdfb-19b3-47b6-9596-d396148c44c0", "c9641771-e6b5-405e-b89e-b4f1f86cb09a"]
+DEBUG host: Searching for cap: nfs_prune
+DEBUG host: Checking in: darwin
+DEBUG host: Checking in: bsd
+DEBUG host: Found cap: nfs_prune in bsd
+ INFO host: Execute capability: nfs_prune [#<Vagrant::Environment: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2>, #<Vagrant::UI::Prefixed:0x000000010a6733c8 @logger=#<Log4r::Logger:0x000000010a673350 @fullname="vagrant::ui::interface", @outputters=[], @additive=true, @name="interface", @path="vagrant::ui", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @opts={}, @stdin=#<IO:<STDIN>>, @stdout=#<IO:<STDOUT>>, @stderr=#<IO:<STDERR>>, @prefix=:webserver, @ui=#<Vagrant::UI::Basic:0x0000000106c02608 @logger=#<Log4r::Logger:0x0000000106c02450 @fullname="vagrant::ui::interface", @outputters=[], @additive=true, @name="interface", @path="vagrant::ui", @parent=#<VagrantLogger:0x00000001067ef660 @fullname="vagrant", @outputters=[#<Log4r::StderrOutputter:0x0000000106904988 @name="stderr", @level=0, @formatter=#<Vagrant::Util::LoggingFormatter:0x00000001065cecc8 @formatter=#<Log4r::BasicFormatter:0x0000000106645e18 @depth=7>>, @out=#<IO:<STDERR>>>], @additive=true, @name="vagrant", @path="", @parent=#<Log4r::RootLogger:0x00000001067ef2c8 @level=0, @outputters=[]>, @level=2, @trace=false>, @level=2, @trace=false>, @opts={:color=>:default}, @stdin=#<IO:<STDIN>>, @stdout=#<IO:<STDOUT>>, @stderr=#<IO:<STDERR>>, @lock=#<Thread::Mutex:0x0000000106c88078>>>, ["3c26cdfb-19b3-47b6-9596-d396148c44c0", "c9641771-e6b5-405e-b89e-b4f1f86cb09a"]] (darwin)
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::SyncedFolderCleanup:0x000000010af49da8>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Delayed:0x000000010b51c9b0>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::SyncedFolders:0x000000010b51c870>
+ INFO synced_folders: SyncedFolders loading from cache: false
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::PrepareNFSSettings:0x000000010b577518>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::SetDefaultNICType:0x000000010b5c5d30>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::ClearNetworkInterfaces:0x0000000106c93928>
+ INFO interface: info: Clearing any previously set network interfaces...
+ INFO interface: info: ==> webserver: Clearing any previously set network interfaces...
+==> webserver: Clearing any previously set network interfaces...
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "modifyvm", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--nic2", "none", "--nic3", "none", "--nic4", "none", "--nic5", "none", "--nic6", "none", "--nic7", "none", "--nic8", "none"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::Network:0x0000000106c93630>
+DEBUG network: Available slots for high-level adapters: #<Set: {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36}>
+ INFO network: Determining network adapters required for high-level configuration...
+ INFO network:  -- Slot 2: hostonly
+ INFO network: Determining adapters and compiling network configuration...
+ INFO network: Network slot 1. Type: nat.
+DEBUG network: Normalized configuration: {:auto_config=>false, :adapter=>1}
+DEBUG network: Adapter configuration: {:adapter=>1, :type=>:nat, :nic_type=>nil}
+ INFO network: Network slot 2. Type: hostonly.
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "list", "bridgedifs"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "list", "hostonlynets"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG network: Normalized configuration: {:adapter_ip=>"192.168.4.1", :auto_config=>true, :ip=>"192.168.4.4", :mac=>nil, :name=>nil, :netmask=>"255.255.255.0", :nic_type=>nil, :type=>:static, :adapter=>2}
+ INFO network: Searching for matching hostonly network: 192.168.4.4
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "list", "hostonlynets"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG network: Adapter configuration: {:adapter=>2, :hostonly=>"vagrantnet-vbox1", :mac_address=>nil, :nic_type=>nil, :type=>:hostonly}
+ INFO network: Enabling adapters...
+ INFO interface: output: Preparing network interfaces based on configuration...
+ INFO interface: output: ==> webserver: Preparing network interfaces based on configuration...
+==> webserver: Preparing network interfaces based on configuration...
+ INFO interface: detail: Adapter 1: nat
+ INFO interface: detail:     webserver: Adapter 1: nat
+    webserver: Adapter 1: nat
+ INFO interface: detail: Adapter 2: hostonly
+ INFO interface: detail:     webserver: Adapter 2: hostonly
+    webserver: Adapter 2: hostonly
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "modifyvm", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--nic1", "nat"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 31999
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "modifyvm", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--nic2", "hostonlynet", "--host-only-net2", "vagrantnet-vbox1", "--cableconnected2", "on"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::NetworkFixIPv6:0x000000010657da80>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::ForwardPorts:0x000000010a63b4f0>
+ INFO interface: output: Forwarding ports...
+ INFO interface: output: ==> webserver: Forwarding ports...
+==> webserver: Forwarding ports...
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO interface: detail: 80 (guest) => 8888 (host) (adapter 1)
+ INFO interface: detail:     webserver: 80 (guest) => 8888 (host) (adapter 1)
+    webserver: 80 (guest) => 8888 (host) (adapter 1)
+ INFO interface: detail: 22 (guest) => 2222 (host) (adapter 1)
+ INFO interface: detail:     webserver: 22 (guest) => 2222 (host) (adapter 1)
+    webserver: 22 (guest) => 2222 (host) (adapter 1)
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "modifyvm", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--natpf1", "tcp8888,tcp,,8888,,80", "--natpf1", "ssh,tcp,127.0.0.1,2222,,22"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::SetHostname:0x000000010a63b388>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::SaneDefaults:0x000000010a774308>
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "modifyvm", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--rtcuseutc", "on"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO sanedefaults: Automatically figuring out whether to enable/disable NAT DNS proxy...
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "modifyvm", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--natdnsproxy1", "on"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Call:0x000000010a943c88>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x000000010bb7fb90>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::IsEnvSet:0x000000010a7b2158>
+DEBUG is_env_set: Checking if env is set: 'cloud_init'
+DEBUG is_env_set:  - Result: true
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::IsEnvSet:0x000000010a7b2158>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Warden:0x000000010b715320>
+ INFO warden: Calling IN action: #<Proc:0x000000010b7d7cb8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::CloudInitSetup:0x000000010b715140>
+ INFO warden: Calling IN action: #<Proc:0x000000010b6e6cc8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::CleanupDisks:0x000000010a9436e8>
+ INFO disk: No previous disk_meta file defined for guest webserver
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Disk:0x000000010aa58268>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::Customize:0x000000010ac12748>
+ INFO interface: info: Running 'pre-boot' VM customizations...
+ INFO interface: info: ==> webserver: Running 'pre-boot' VM customizations...
+==> webserver: Running 'pre-boot' VM customizations...
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "modifyvm", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--vram", "256"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "modifyvm", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--cpus", "2"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "modifyvm", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--memory", "2048"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "modifyvm", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--memory", "1024"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "modifyvm", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--cpus", "2"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::Boot:0x000000010ac12568>
+ INFO interface: info: Booting VM...
+ INFO interface: info: ==> webserver: Booting VM...
+==> webserver: Booting VM...
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "startvm", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--type", "headless"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 31997
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::Customize:0x000000010ac12388>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::WaitForCommunicator:0x000000010ac121a8>
+ INFO interface: output: Waiting for machine to boot. This may take a few minutes...
+ INFO interface: output: ==> webserver: Waiting for machine to boot. This may take a few minutes...
+==> webserver: Waiting for machine to boot. This may take a few minutes...
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0: Searching for SSH port: 22
+DEBUG virtualbox_7_0: read_forward_ports: uuid=3c26cdfb-19b3-47b6-9596-d396148c44c0 active_only=false
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0:   - [1, "ssh", 2222, 22, "127.0.0.1"]
+DEBUG virtualbox_7_0:   - [1, "tcp8888", 8888, 80, ""]
+DEBUG ssh: Checking key permissions: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/machines/webserver/virtualbox/private_key
+ INFO interface: detail: SSH address: 127.0.0.1:2222
+ INFO interface: detail:     webserver: SSH address: 127.0.0.1:2222
+    webserver: SSH address: 127.0.0.1:2222
+ INFO interface: detail: SSH username: vagrant
+ INFO interface: detail:     webserver: SSH username: vagrant
+    webserver: SSH username: vagrant
+ INFO interface: detail: SSH auth method: private key
+ INFO interface: detail:     webserver: SSH auth method: private key
+    webserver: SSH auth method: private key
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0: Searching for SSH port: 22
+DEBUG virtualbox_7_0: read_forward_ports: uuid=3c26cdfb-19b3-47b6-9596-d396148c44c0 active_only=false
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0:   - [1, "ssh", 2222, 22, "127.0.0.1"]
+DEBUG virtualbox_7_0:   - [1, "tcp8888", 8888, 80, ""]
+DEBUG ssh: Checking key permissions: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/machines/webserver/virtualbox/private_key
+ INFO ssh: Attempting SSH connection...
+ INFO ssh: Attempting to connect to SSH...
+ INFO ssh:   - Host: 127.0.0.1
+ INFO ssh:   - Port: 2222
+ INFO ssh:   - Username: vagrant
+ INFO ssh:   - Password? false
+ INFO ssh:   - Key Path: ["/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/machines/webserver/virtualbox/private_key"]
+DEBUG ssh:   - connect_opts: {:auth_methods=>["none", "hostbased", "publickey"], :config=>false, :forward_agent=>false, :send_env=>false, :keys_only=>true, :verify_host_key=>:never, :password=>nil, :port=>2222, :timeout=>15, :user_known_hosts_file=>[], :verbose=>:debug, :logger=>#<Logger:0x000000010b765b90 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x000000010b765af0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x000000010b765a00 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<StringIO:0x000000010b765c58>, @binmode=false, @mon_data=#<Monitor:0x000000010b7659b0>, @mon_data_owner_object_id=51680>>, :keys=>["/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/machines/webserver/virtualbox/private_key"], :remote_user=>"vagrant", :keepalive=>true, :keepalive_interval=>5}
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 31999
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 31999
+DEBUG subprocess: Exit status: 0
+DEBUG ssh: == Net-SSH connection debug-level log START ==
+DEBUG ssh: D, [2023-10-13T23:56:59.916464 #26497] DEBUG -- net.ssh.transport.session[c9f4]: establishing connection to 127.0.0.1:2222
+D, [2023-10-13T23:56:59.919802 #26497] DEBUG -- net.ssh.transport.session[c9f4]: connection established
+I, [2023-10-13T23:56:59.919921 #26497]  INFO -- net.ssh.transport.server_version[ca08]: negotiating protocol version
+D, [2023-10-13T23:56:59.919944 #26497] DEBUG -- net.ssh.transport.server_version[ca08]: local is `SSH-2.0-Ruby/Net::SSH_7.1.0 x86_64-darwin'
+
+DEBUG ssh: == Net-SSH connection debug-level log END ==
+ INFO ssh: SSH not ready: #<Vagrant::Errors::NetSSHException: An error occurred in the underlying SSH library that Vagrant uses.
+The error message is shown below. In many cases, errors from this
+library are caused by ssh-agent issues. Try disabling your SSH
+agent or removing some keys and try again.
+
+If the problem persists, please report a bug to the net-ssh project.
+
+timeout during server version negotiating>
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 31999
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0: Searching for SSH port: 22
+DEBUG virtualbox_7_0: read_forward_ports: uuid=3c26cdfb-19b3-47b6-9596-d396148c44c0 active_only=false
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0:   - [1, "ssh", 2222, 22, "127.0.0.1"]
+DEBUG virtualbox_7_0:   - [1, "tcp8888", 8888, 80, ""]
+DEBUG ssh: Checking key permissions: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/machines/webserver/virtualbox/private_key
+ INFO ssh: Attempting SSH connection...
+ INFO ssh: Attempting to connect to SSH...
+ INFO ssh:   - Host: 127.0.0.1
+ INFO ssh:   - Port: 2222
+ INFO ssh:   - Username: vagrant
+ INFO ssh:   - Password? false
+ INFO ssh:   - Key Path: ["/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/machines/webserver/virtualbox/private_key"]
+DEBUG ssh:   - connect_opts: {:auth_methods=>["none", "hostbased", "publickey"], :config=>false, :forward_agent=>false, :send_env=>false, :keys_only=>true, :verify_host_key=>:never, :password=>nil, :port=>2222, :timeout=>15, :user_known_hosts_file=>[], :verbose=>:debug, :logger=>#<Logger:0x000000010bb8e000 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x000000010bb8dee8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x000000010bb8ddd0 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<StringIO:0x000000010bb8e0a0>, @binmode=false, @mon_data=#<Monitor:0x000000010bb8dd58>, @mon_data_owner_object_id=51740>>, :keys=>["/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/machines/webserver/virtualbox/private_key"], :remote_user=>"vagrant", :keepalive=>true, :keepalive_interval=>5}
+DEBUG ssh: == Net-SSH connection debug-level log START ==
+DEBUG ssh: D, [2023-10-13T23:57:15.238026 #26497] DEBUG -- net.ssh.transport.session[ca30]: establishing connection to 127.0.0.1:2222
+D, [2023-10-13T23:57:15.239312 #26497] DEBUG -- net.ssh.transport.session[ca30]: connection established
+I, [2023-10-13T23:57:15.239429 #26497]  INFO -- net.ssh.transport.server_version[ca44]: negotiating protocol version
+D, [2023-10-13T23:57:15.239457 #26497] DEBUG -- net.ssh.transport.server_version[ca44]: local is `SSH-2.0-Ruby/Net::SSH_7.1.0 x86_64-darwin'
+D, [2023-10-13T23:57:15.246508 #26497] DEBUG -- net.ssh.transport.server_version[ca44]: remote is `SSH-2.0-OpenSSH_7.7'
+I, [2023-10-13T23:57:15.248064 #26497]  INFO -- net.ssh.transport.algorithms[ca58]: sending KEXINIT
+D, [2023-10-13T23:57:15.253604 #26497] DEBUG -- socket[ca6c]: queueing packet nr 0 type 20 len 852
+D, [2023-10-13T23:57:15.253712 #26497] DEBUG -- socket[ca6c]: sent 856 bytes
+D, [2023-10-13T23:57:15.253846 #26497] DEBUG -- socket[ca6c]: read 1080 bytes
+D, [2023-10-13T23:57:15.253956 #26497] DEBUG -- socket[ca6c]: received packet nr 0 type 20 len 1076
+I, [2023-10-13T23:57:15.254017 #26497]  INFO -- net.ssh.transport.algorithms[ca58]: got KEXINIT from server
+I, [2023-10-13T23:57:15.254123 #26497]  INFO -- net.ssh.transport.algorithms[ca58]: negotiating algorithms
+D, [2023-10-13T23:57:15.254241 #26497] DEBUG -- net.ssh.transport.algorithms[ca58]: negotiated:
+* kex: ecdh-sha2-nistp521
+* host_key: ssh-ed25519
+* encryption_server: aes256-ctr
+* encryption_client: aes256-ctr
+* hmac_client: hmac-sha2-512-etm@openssh.com
+* hmac_server: hmac-sha2-512-etm@openssh.com
+* compression_client: none
+* compression_server: none
+* language_client: 
+* language_server: 
+D, [2023-10-13T23:57:15.254266 #26497] DEBUG -- net.ssh.transport.algorithms[ca58]: exchanging keys
+D, [2023-10-13T23:57:15.279719 #26497] DEBUG -- socket[ca6c]: queueing packet nr 1 type 30 len 148
+D, [2023-10-13T23:57:15.279812 #26497] DEBUG -- socket[ca6c]: sent 152 bytes
+D, [2023-10-13T23:57:15.290058 #26497] DEBUG -- socket[ca6c]: read 312 bytes
+D, [2023-10-13T23:57:15.290191 #26497] DEBUG -- socket[ca6c]: received packet nr 1 type 31 len 292
+D, [2023-10-13T23:57:15.306851 #26497] DEBUG -- socket[ca6c]: queueing packet nr 2 type 21 len 20
+D, [2023-10-13T23:57:15.307308 #26497] DEBUG -- socket[ca6c]: sent 24 bytes
+D, [2023-10-13T23:57:15.307429 #26497] DEBUG -- socket[ca6c]: received packet nr 2 type 21 len 12
+D, [2023-10-13T23:57:15.308333 #26497] DEBUG -- net.ssh.authentication.session[ca80]: beginning authentication of `vagrant'
+D, [2023-10-13T23:57:15.308436 #26497] DEBUG -- socket[ca6c]: using encrypt-then-mac
+D, [2023-10-13T23:57:15.310386 #26497] DEBUG -- socket[ca6c]: queueing packet nr 3 type 5 len 32
+D, [2023-10-13T23:57:15.310467 #26497] DEBUG -- socket[ca6c]: sent 100 bytes
+D, [2023-10-13T23:57:15.311268 #26497] DEBUG -- socket[ca6c]: read 100 bytes
+D, [2023-10-13T23:57:15.311501 #26497] DEBUG -- socket[ca6c]: received packet nr 3 type 6 len 32
+D, [2023-10-13T23:57:15.311620 #26497] DEBUG -- net.ssh.authentication.session[ca80]: trying none
+D, [2023-10-13T23:57:15.311729 #26497] DEBUG -- socket[ca6c]: using encrypt-then-mac
+D, [2023-10-13T23:57:15.311819 #26497] DEBUG -- socket[ca6c]: queueing packet nr 4 type 50 len 48
+D, [2023-10-13T23:57:15.311898 #26497] DEBUG -- socket[ca6c]: sent 116 bytes
+D, [2023-10-13T23:57:15.314838 #26497] DEBUG -- socket[ca6c]: read 132 bytes
+D, [2023-10-13T23:57:15.315071 #26497] DEBUG -- socket[ca6c]: received packet nr 4 type 51 len 64
+D, [2023-10-13T23:57:15.315138 #26497] DEBUG -- net.ssh.authentication.session[ca80]: allowed methods: publickey,password,keyboard-interactive
+D, [2023-10-13T23:57:15.315185 #26497] DEBUG -- net.ssh.authentication.methods.none[ca94]: none failed
+D, [2023-10-13T23:57:15.315231 #26497] DEBUG -- net.ssh.authentication.session[ca80]: trying publickey
+D, [2023-10-13T23:57:15.319584 #26497] DEBUG -- net.ssh.authentication.agent[caa8]: connecting to ssh-agent
+D, [2023-10-13T23:57:15.321057 #26497] DEBUG -- net.ssh.authentication.agent[caa8]: sending agent request 1 len 45
+D, [2023-10-13T23:57:15.321231 #26497] DEBUG -- net.ssh.authentication.agent[caa8]: received agent packet 5 len 1
+D, [2023-10-13T23:57:15.321268 #26497] DEBUG -- net.ssh.authentication.agent[caa8]: sending agent request 11 len 0
+D, [2023-10-13T23:57:15.321405 #26497] DEBUG -- net.ssh.authentication.agent[caa8]: received agent packet 12 len 5
+D, [2023-10-13T23:57:15.322538 #26497] DEBUG -- net.ssh.authentication.methods.publickey[cad0]: trying publickey (55:b0:cb:7e:16:1c:31:7e:e2:67:aa:62:6e:d8:53:3b)
+D, [2023-10-13T23:57:15.322858 #26497] DEBUG -- socket[ca6c]: using encrypt-then-mac
+D, [2023-10-13T23:57:15.323097 #26497] DEBUG -- socket[ca6c]: queueing packet nr 5 type 50 len 352
+D, [2023-10-13T23:57:15.323234 #26497] DEBUG -- socket[ca6c]: sent 420 bytes
+D, [2023-10-13T23:57:15.327416 #26497] DEBUG -- socket[ca6c]: read 388 bytes
+D, [2023-10-13T23:57:15.327663 #26497] DEBUG -- socket[ca6c]: received packet nr 5 type 60 len 320
+D, [2023-10-13T23:57:15.331357 #26497] DEBUG -- socket[ca6c]: using encrypt-then-mac
+D, [2023-10-13T23:57:15.331553 #26497] DEBUG -- socket[ca6c]: queueing packet nr 6 type 50 len 640
+D, [2023-10-13T23:57:15.331631 #26497] DEBUG -- socket[ca6c]: sent 708 bytes
+D, [2023-10-13T23:57:15.333540 #26497] DEBUG -- socket[ca6c]: read 84 bytes
+D, [2023-10-13T23:57:15.334014 #26497] DEBUG -- socket[ca6c]: received packet nr 6 type 52 len 16
+D, [2023-10-13T23:57:15.334117 #26497] DEBUG -- net.ssh.authentication.methods.publickey[cad0]: publickey succeeded (55:b0:cb:7e:16:1c:31:7e:e2:67:aa:62:6e:d8:53:3b)
+
+DEBUG ssh: == Net-SSH connection debug-level log END ==
+DEBUG ssh: Checking whether SSH is ready...
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: SSH is ready!
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute:  (sudo=false)
+DEBUG ssh: Exit status: 0
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0: Searching for SSH port: 22
+DEBUG virtualbox_7_0: read_forward_ports: uuid=3c26cdfb-19b3-47b6-9596-d396148c44c0 active_only=false
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0:   - [1, "ssh", 2222, 22, "127.0.0.1"]
+DEBUG virtualbox_7_0:   - [1, "tcp8888", 8888, 80, ""]
+DEBUG ssh: Checking key permissions: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/machines/webserver/virtualbox/private_key
+ INFO interface: output: Machine booted and ready!
+ INFO interface: output: ==> webserver: Machine booted and ready!
+==> webserver: Machine booted and ready!
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Call:0x000000010ac11fc8>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x000000010af3b438>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::IsEnvSet:0x000000010b63c250>
+DEBUG is_env_set: Checking if env is set: 'cloud_init'
+DEBUG is_env_set:  - Result: true
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::IsEnvSet:0x000000010b63c250>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Warden:0x000000010b77c340>
+ INFO warden: Calling IN action: #<Proc:0x000000010b8bc340 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::CloudInitWait:0x000000010b77c0e8>
+ INFO warden: Calling IN action: #<Proc:0x000000010b7c7b10 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::Customize:0x000000010ac11de8>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::CheckGuestAdditions:0x000000010ac11ca8>
+ INFO interface: output: Checking for guest additions in VM...
+ INFO interface: output: ==> webserver: Checking for guest additions in VM...
+==> webserver: Checking for guest additions in VM...
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "guestproperty", "get", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "/VirtualBox/GuestAdd/Version"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO interface: detail: The guest additions on this VM do not match the installed version of
+VirtualBox! In most cases this is fine, but in rare cases it can
+prevent things such as shared folders from working properly. If you see
+shared folder errors, please make sure the guest additions within the
+virtual machine match the version of VirtualBox you have installed on
+your host and reload your VM.
+
+Guest Additions Version: 5.2.2 r119230
+VirtualBox Version: 7.0
+ INFO interface: detail:     webserver: The guest additions on this VM do not match the installed version of
+    webserver: VirtualBox! In most cases this is fine, but in rare cases it can
+    webserver: prevent things such as shared folders from working properly. If you see
+    webserver: shared folder errors, please make sure the guest additions within the
+    webserver: virtual machine match the version of VirtualBox you have installed on
+    webserver: your host and reload your VM.
+    webserver: 
+    webserver: Guest Additions Version: 5.2.2 r119230
+    webserver: VirtualBox Version: 7.0
+    webserver: The guest additions on this VM do not match the installed version of
+    webserver: VirtualBox! In most cases this is fine, but in rare cases it can
+    webserver: prevent things such as shared folders from working properly. If you see
+    webserver: shared folder errors, please make sure the guest additions within the
+    webserver: virtual machine match the version of VirtualBox you have installed on
+    webserver: your host and reload your VM.
+    webserver: 
+    webserver: Guest Additions Version: 5.2.2 r119230
+    webserver: VirtualBox Version: 7.0
+ INFO warden: Calling IN action: #<Proc:0x000000010ac99db0 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling IN action: #<Proc:0x000000010a774d58 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling IN action: #<Proc:0x000000010a5b6908 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling IN action: #<VagrantPlugins::CommandUp::StoreBoxMetadata:0x000000010a938770>
+DEBUG storeboxmetadata: Writing box metadata file to /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/machines/webserver/virtualbox/box_meta
+ INFO warden: Calling OUT action: #<VagrantPlugins::CommandUp::StoreBoxMetadata:0x000000010a938770>
+ INFO warden: Calling OUT action: #<Proc:0x000000010a5b6908 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling OUT action: #<Proc:0x000000010a774d58 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling OUT action: #<Proc:0x000000010ac99db0 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::CheckGuestAdditions:0x000000010ac11ca8>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::Customize:0x000000010ac11de8>
+ INFO warden: Calling OUT action: #<Proc:0x000000010b7c7b10 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::CloudInitWait:0x000000010b77c0e8>
+ INFO warden: Calling OUT action: #<Proc:0x000000010b8bc340 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::Call:0x000000010ac11fc8>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::WaitForCommunicator:0x000000010ac121a8>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::Customize:0x000000010ac12388>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::Boot:0x000000010ac12568>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::Customize:0x000000010ac12748>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::Disk:0x000000010aa58268>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::CleanupDisks:0x000000010a9436e8>
+ INFO warden: Calling OUT action: #<Proc:0x000000010b6e6cc8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::CloudInitSetup:0x000000010b715140>
+ INFO warden: Calling OUT action: #<Proc:0x000000010b7d7cb8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::Call:0x000000010a943c88>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::SaneDefaults:0x000000010a774308>
+ INFO interface: info: Setting hostname...
+ INFO interface: info: ==> webserver: Setting hostname...
+==> webserver: Setting hostname...
+DEBUG ssh: Checking whether SSH is ready...
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: SSH is ready!
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute:  (sudo=false)
+DEBUG ssh: Exit status: 0
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+ INFO guest: Autodetecting host type for [#<Vagrant::Machine: webserver (VagrantPlugins::ProviderVirtualBox::Provider)>]
+DEBUG guest: Trying: mint
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: if test -r /etc/os-release; then
+source /etc/os-release && test 'xLinux Mint' = "x$ID" && exit
+fi
+if test -x /usr/bin/lsb_release; then
+/usr/bin/lsb_release -i 2>/dev/null | grep -qi 'Linux Mint' && exit
+fi
+if test -r /etc/issue; then
+cat /etc/issue | grep -qi 'Linux Mint' && exit
+fi
+exit 1
+ (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 1
+DEBUG guest: Trying: atomic
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: grep 'ostree=.*atomic' /proc/cmdline (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 1
+DEBUG guest: Trying: trisquel
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: [ -x /usr/bin/lsb_release ] && /usr/bin/lsb_release -i 2>/dev/null | grep Trisquel (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 1
+DEBUG guest: Trying: elementary
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: if test -r /etc/os-release; then
+source /etc/os-release && test 'xelementary' = "x$ID" && exit
+fi
+if test -x /usr/bin/lsb_release; then
+/usr/bin/lsb_release -i 2>/dev/null | grep -qi 'elementary' && exit
+fi
+if test -r /etc/issue; then
+cat /etc/issue | grep -qi 'elementary' && exit
+fi
+exit 1
+ (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 1
+DEBUG guest: Trying: dragonflybsd
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: uname -s | grep -i 'DragonFly' (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 1
+DEBUG guest: Trying: pld
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: cat /etc/pld-release (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: stderr: cat: can't open '/etc/pld-release': No such file or directory
+
+DEBUG ssh: Exit status: 1
+DEBUG guest: Trying: amazon
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: grep 'Amazon Linux' /etc/os-release (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 1
+DEBUG guest: Trying: rocky
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: if test -r /etc/os-release; then
+source /etc/os-release && test 'xrocky' = "x$ID" && exit
+fi
+if test -x /usr/bin/lsb_release; then
+/usr/bin/lsb_release -i 2>/dev/null | grep -qi 'rocky' && exit
+fi
+if test -r /etc/issue; then
+cat /etc/issue | grep -qi 'rocky' && exit
+fi
+exit 1
+ (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 1
+DEBUG guest: Trying: centos
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: if test -r /etc/os-release; then
+source /etc/os-release && test 'xcentos' = "x$ID" && exit
+fi
+if test -x /usr/bin/lsb_release; then
+/usr/bin/lsb_release -i 2>/dev/null | grep -qi 'centos' && exit
+fi
+if test -r /etc/issue; then
+cat /etc/issue | grep -qi 'centos' && exit
+fi
+exit 1
+ (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 1
+DEBUG guest: Trying: alma
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: if test -r /etc/os-release; then
+source /etc/os-release && test 'xalmalinux' = "x$ID" && exit
+fi
+if test -x /usr/bin/lsb_release; then
+/usr/bin/lsb_release -i 2>/dev/null | grep -qi 'almalinux' && exit
+fi
+if test -r /etc/issue; then
+cat /etc/issue | grep -qi 'almalinux' && exit
+fi
+exit 1
+ (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 1
+DEBUG guest: Trying: fedora
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: if test -r /etc/os-release; then
+source /etc/os-release && test 'xfedora' = "x$ID" && exit
+fi
+if test -x /usr/bin/lsb_release; then
+/usr/bin/lsb_release -i 2>/dev/null | grep -qi 'fedora' && exit
+fi
+if test -r /etc/issue; then
+cat /etc/issue | grep -qi 'fedora' && exit
+fi
+exit 1
+ (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 1
+DEBUG guest: Trying: kali
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: if test -r /etc/os-release; then
+source /etc/os-release && test 'xkali' = "x$ID" && exit
+fi
+if test -x /usr/bin/lsb_release; then
+/usr/bin/lsb_release -i 2>/dev/null | grep -qi 'kali' && exit
+fi
+if test -r /etc/issue; then
+cat /etc/issue | grep -qi 'kali' && exit
+fi
+exit 1
+ (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 1
+DEBUG guest: Trying: funtoo
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: grep Funtoo /etc/gentoo-release (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: stderr: grep: /etc/gentoo-release: No such file or directory
+
+DEBUG ssh: Exit status: 2
+DEBUG guest: Trying: ubuntu
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: if test -r /etc/os-release; then
+source /etc/os-release && test 'xubuntu' = "x$ID" && exit
+fi
+if test -x /usr/bin/lsb_release; then
+/usr/bin/lsb_release -i 2>/dev/null | grep -qi 'ubuntu' && exit
+fi
+if test -r /etc/issue; then
+cat /etc/issue | grep -qi 'ubuntu' && exit
+fi
+exit 1
+ (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 1
+DEBUG guest: Trying: alt
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: cat /etc/altlinux-release (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: stderr: cat: can't open '/etc/altlinux-release': No such file or directory
+
+DEBUG ssh: Exit status: 1
+DEBUG guest: Trying: alpine
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: cat /etc/alpine-release (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+ INFO guest: Detected: alpine!
+DEBUG guest: Searching for cap: change_host_name
+DEBUG guest: Checking in: alpine
+DEBUG guest: Found cap: change_host_name in alpine
+ INFO guest: Execute capability: change_host_name [#<Vagrant::Machine: webserver (VagrantPlugins::ProviderVirtualBox::Provider)>, "webserver"] (alpine)
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute:           grep -w 'webserver' /etc/hosts || {
+            for i in 1 2 3 4 5; do
+grep -w "127.0.${i}.1" /etc/hosts || {
+  echo "127.0.${i}.1 webserver webserver" >> /etc/hosts
+  break
+}
+            done
+          }
+ (sudo=true)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: hostname -f (sudo=true)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::SetHostname:0x000000010a63b388>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::ForwardPorts:0x000000010a63b4f0>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::NetworkFixIPv6:0x000000010657da80>
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO interface: info: Configuring and enabling network interfaces...
+ INFO interface: info: ==> webserver: Configuring and enabling network interfaces...
+==> webserver: Configuring and enabling network interfaces...
+DEBUG ssh: Checking whether SSH is ready...
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: SSH is ready!
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute:  (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+DEBUG guest: Searching for cap: configure_networks
+DEBUG guest: Checking in: alpine
+DEBUG guest: Found cap: configure_networks in alpine
+ INFO guest: Execute capability: configure_networks [#<Vagrant::Machine: webserver (VagrantPlugins::ProviderVirtualBox::Provider)>, [{:type=>:static, :adapter_ip=>"192.168.4.1", :ip=>"192.168.4.4", :netmask=>"255.255.255.0", :auto_config=>true, :interface=>1}]] (alpine)
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: sed -e '/^#VAGRANT-BEGIN/,$ d' /etc/network/interfaces > /tmp/vagrant-network-interfaces.pre (sudo=true)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: sed -ne '/^#VAGRANT-END/,$ p' /etc/network/interfaces | tail -n +2 > /tmp/vagrant-network-interfaces.post (sudo=true)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+DEBUG ssh: Uploading: /var/folders/k3/2s_1k6td4n7c55vkcll810wr0000gp/T/vagrant20231013-26497-hkxvlv to /tmp/vagrant-network-entry
+DEBUG ssh: Re-using SSH connection.
+DEBUG ssh: Ensuring remote directory exists for destination upload
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: mkdir -p "/tmp" (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+DEBUG ssh: Uploading file /var/folders/k3/2s_1k6td4n7c55vkcll810wr0000gp/T/vagrant20231013-26497-hkxvlv to remote /tmp/vagrant-network-entry
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: if [[ $(/sbin/ip a show eth1 | grep UP) ]]; then /sbin/ifdown eth1 2> /dev/null; fi (sudo=true)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: /sbin/ip addr flush dev eth1 2> /dev/null (sudo=true)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: cat /tmp/vagrant-network-interfaces.pre /tmp/vagrant-network-entry /tmp/vagrant-network-interfaces.post > /etc/network/interfaces (sudo=true)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: rm -f /tmp/vagrant-network-interfaces.pre /tmp/vagrant-network-entry /tmp/vagrant-network-interfaces.post (sudo=true)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: /sbin/ifup eth1 (sudo=true)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::Network:0x0000000106c93630>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::ClearNetworkInterfaces:0x0000000106c93928>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::SetDefaultNICType:0x000000010b5c5d30>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::PrepareNFSSettings:0x000000010b577518>
+DEBUG ssh: Checking whether SSH is ready...
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: SSH is ready!
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute:  (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+DEBUG guest: Searching for cap: persist_mount_shared_folder
+DEBUG guest: Checking in: alpine
+DEBUG guest: Checking in: linux
+DEBUG guest: Found cap: persist_mount_shared_folder in linux
+DEBUG ssh: Checking whether SSH is ready...
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: SSH is ready!
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute:  (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+DEBUG guest: Searching for cap: persist_mount_shared_folder
+DEBUG guest: Checking in: alpine
+DEBUG guest: Checking in: linux
+DEBUG guest: Found cap: persist_mount_shared_folder in linux
+ INFO guest: Execute capability: persist_mount_shared_folder [#<Vagrant::Machine: webserver (VagrantPlugins::ProviderVirtualBox::Provider)>, {}] (alpine)
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0: Searching for SSH port: 22
+DEBUG virtualbox_7_0: read_forward_ports: uuid=3c26cdfb-19b3-47b6-9596-d396148c44c0 active_only=false
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "3c26cdfb-19b3-47b6-9596-d396148c44c0", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0:   - [1, "ssh", 2222, 22, "127.0.0.1"]
+DEBUG virtualbox_7_0:   - [1, "tcp8888", 8888, 80, ""]
+DEBUG ssh: Checking key permissions: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/machines/webserver/virtualbox/private_key
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: test -f /etc/fstab (sudo=false)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: sed -i '/#VAGRANT-BEGIN/,/#VAGRANT-END/d' /etc/fstab (sudo=true)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+DEBUG ssh: Re-using SSH connection.
+ INFO ssh: Execute: echo '#VAGRANT-BEGIN
+# The contents below are automatically generated by Vagrant. Do not modify.
+#VAGRANT-END' >> /etc/fstab (sudo=true)
+DEBUG ssh: stderr: 41e57d38-b4f7-4e46-9c38-13873d338b86-vagrant-ssh
+DEBUG ssh: Exit status: 0
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::SyncedFolders:0x000000010b51c870>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::Delayed:0x000000010b51c9b0>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::SyncedFolderCleanup:0x000000010af49da8>
+ INFO warden: Calling OUT action: #<VagrantPlugins::SyncedFolderNFS::ActionCleanup:0x000000010aeeb708>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::PrepareNFSValidIds:0x000000010ae90100>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::HandleForwardedPortCollisions:0x000000010aed0700>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::PrepareForwardedPortCollisionParams:0x000000010aed07f0>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::EnvSet:0x000000010aed0890>
+ INFO interface: info: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+flag to force provisioning. Provisioners marked to run always will still run.
+ INFO interface: info: ==> webserver: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> webserver: flag to force provisioning. Provisioners marked to run always will still run.
+==> webserver: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> webserver: flag to force provisioning. Provisioners marked to run always will still run.
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::Provision:0x000000010ae6b2d8>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::ClearForwardedPorts:0x000000010ae6b350>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::SetName:0x000000010ae104c8>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::CleanMachineFolder:0x000000010ae105b8>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::CheckAccessible:0x000000010ae106a8>
+ INFO warden: Calling OUT action: #<Proc:0x000000010ae230f0 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::Call:0x000000010a774df8>
+ INFO warden: Calling OUT action: #<Proc:0x000000010aa093c0 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::Call:0x000000010a5ec198>
+ INFO warden: Calling OUT action: #<Proc:0x000000010a901428 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::Call:0x000000010a938950>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::BoxCheckOutdated:0x000000010a96b440>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::ConfigValidate:0x000000010a96b4b8>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::CheckVirtualbox:0x000000010a9132e0>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::EnvSet:0x000000010a913330>
+ INFO warden: Calling OUT action: #<Proc:0x000000010a832bc8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling OUT action: #<Proc:0x000000010a913bc8 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::Call:0x000000010a9133d0>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::ConfigValidate:0x000000010a9134c0>
+ INFO warden: Calling OUT action: #<Proc:0x000000010a950550 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling OUT action: #<Proc:0x000000010aa38148 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling OUT action: #<Vagrant::Action::Builtin::Call:0x000000010a9135d8>
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::CheckVirtualbox:0x000000010a862878>
+ INFO interface: Machine: action ["up", "end", {:target=>:webserver}]
+ INFO environment: Released process lock: machine-action-e244da6e1ca399d93d64fc9299a73309
+DEBUG environment: Attempting to acquire process-lock: dotlock
+ INFO environment: Acquired process lock: dotlock
+ INFO environment: Released process lock: dotlock
+ INFO batch_action: Starting action: #<Vagrant::Machine:0x0000000106b0a2c8> up {:destroy_on_error=>true, :install_provider=>false, :parallel=>true, :provision_ignore_sentinel=>false, :provision_types=>nil}
+ INFO machine: Calling action: up on provider VirtualBox (c9641771-e6b5-405e-b89e-b4f1f86cb09a)
+DEBUG environment: Attempting to acquire process-lock: machine-action-9d2b75cabc660cf64dbbdcd4f3f191ad
+DEBUG environment: Attempting to acquire process-lock: dotlock
+ INFO environment: Acquired process lock: dotlock
+ INFO environment: Released process lock: dotlock
+ INFO environment: Acquired process lock: machine-action-9d2b75cabc660cf64dbbdcd4f3f191ad
+ INFO interface: Machine: action ["up", "start", {:target=>:database}]
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x000000010b80ea10>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::CheckVirtualbox:0x000000010bb05958>
+ INFO base: VBoxManage path: VBoxManage
+DEBUG meta: Finding driver for VirtualBox version: 7.0.10
+ INFO meta: Using VirtualBox driver: VagrantPlugins::ProviderVirtualBox::Driver::Version_7_0
+ INFO base: VBoxManage path: VBoxManage
+DEBUG virtualbox_7_0: validating LANG value for virtualbox cli commands
+ INFO subprocess: Starting process: ["/usr/bin/locale", "-a"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+DEBUG virtualbox_7_0: list of available C locales: ["en_US.US-ASCII", "en_US.UTF-8", "en_US.ISO8859-15", "en_US.ISO8859-1", "C", "POSIX"]
+DEBUG virtualbox_7_0: valid variation found for LANG value: en_US.UTF-8
+DEBUG virtualbox_7_0: LANG value set: "en_US.UTF-8"
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "list", "hostonlyifs"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::Call:0x000000010bb56920>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Builder:0x000000010b9bfa30>
+ INFO warden: Calling IN action: #<VagrantPlugins::ProviderVirtualBox::Action::Created:0x000000010baaf698>
+ INFO subprocess: Starting process: ["/usr/local/bin/VBoxManage", "showvminfo", "c9641771-e6b5-405e-b89e-b4f1f86cb09a", "--machinereadable"]
+DEBUG subprocess: Command not in installer, not touching env vars.
+ INFO subprocess: Command not in installer, restoring original environment...
+DEBUG subprocess: Selecting on IO
+DEBUG subprocess: Waiting for process to exit. Remaining to timeout: 32000
+DEBUG subprocess: Exit status: 0
+ INFO warden: Calling OUT action: #<VagrantPlugins::ProviderVirtualBox::Action::Created:0x000000010baaf698>
+ INFO runner: Running action: machine_action_up #<Vagrant::Action::Warden:0x000000010ab98ec0>
+ INFO warden: Calling IN action: #<Proc:0x000000010aed8310 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling IN action: #<Proc:0x000000010ab98ba0 /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:126 (lambda)>
+ INFO warden: Calling IN action: #<Vagrant::Action::Builtin::ConfigValidate:0x000000010bb568a8>
+ERROR warden: Error occurred: There are errors in the configuration of this machine. Please fix
+the following errors and try again:
+
+shell provisioner:
+* `path` for shell provisioner does not exist on the host system: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/shell/install_sqlite.sh
+
+
+ INFO warden: Beginning recovery process...
+ INFO warden: Calling recover: #<Vagrant::Action::Builtin::Call:0x000000010bb56920>
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Recovery complete.
+ERROR warden: Error occurred: There are errors in the configuration of this machine. Please fix
+the following errors and try again:
+
+shell provisioner:
+* `path` for shell provisioner does not exist on the host system: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/shell/install_sqlite.sh
+
+
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ERROR warden: Error occurred: There are errors in the configuration of this machine. Please fix
+the following errors and try again:
+
+shell provisioner:
+* `path` for shell provisioner does not exist on the host system: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/shell/install_sqlite.sh
+
+
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO warden: Beginning recovery process...
+ INFO warden: Recovery complete.
+ INFO environment: Released process lock: machine-action-9d2b75cabc660cf64dbbdcd4f3f191ad
+ INFO environment: Running hook: environment_unload
+ INFO runner: Running action: environment_unload #<Vagrant::Action::Builder:0x000000010b5edec0>
+ERROR vagrant: Vagrant experienced an error! Details:
+ERROR vagrant: #<Vagrant::Errors::ConfigInvalid: There are errors in the configuration of this machine. Please fix
+the following errors and try again:
+
+shell provisioner:
+* `path` for shell provisioner does not exist on the host system: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/shell/install_sqlite.sh
+
+>
+ERROR vagrant: There are errors in the configuration of this machine. Please fix
+the following errors and try again:
+
+shell provisioner:
+* `path` for shell provisioner does not exist on the host system: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/shell/install_sqlite.sh
+
+
+ERROR vagrant: /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/builtin/config_validate.rb:18:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:48:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:127:in `block in finalize_action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:48:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:127:in `block in finalize_action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:48:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/builder.rb:180:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/runner.rb:101:in `block in run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/util/busy.rb:19:in `busy'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/runner.rb:101:in `run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/builtin/call.rb:53:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:48:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/plugins/providers/virtualbox/action/check_virtualbox.rb:20:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/warden.rb:48:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/builder.rb:180:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/runner.rb:101:in `block in run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/util/busy.rb:19:in `busy'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/action/runner.rb:101:in `run'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/machine.rb:248:in `action_raw'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/machine.rb:217:in `block in action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/environment.rb:631:in `lock'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/machine.rb:203:in `call'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/machine.rb:203:in `action'
+/opt/vagrant/embedded/gems/gems/vagrant-2.3.7/lib/vagrant/batch_action.rb:86:in `block (2 levels) in run'
+ INFO interface: error: There are errors in the configuration of this machine. Please fix
+the following errors and try again:
+
+shell provisioner:
+* `path` for shell provisioner does not exist on the host system: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/shell/install_sqlite.sh
+
+
+There are errors in the configuration of this machine. Please fix
+the following errors and try again:
+
+shell provisioner:
+* `path` for shell provisioner does not exist on the host system: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/shell/install_sqlite.sh
+
+ INFO interface: Machine: error-exit ["Vagrant::Errors::ConfigInvalid", "There are errors in the configuration of this machine. Please fix\nthe following errors and try again:\n\nshell provisioner:\n* `path` for shell provisioner does not exist on the host system: /Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/shell/install_sqlite.sh\n\n"]
