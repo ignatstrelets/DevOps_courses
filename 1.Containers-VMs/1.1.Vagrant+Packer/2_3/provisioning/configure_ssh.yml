@@ -1,0 +1,23 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+
+    - name: Create user
+      user:
+        name: admin
+        password: ''
+        groups:
+          - sudo
+        state: present
+        shell: /bin/bash
+        system: no
+        createhome: yes
+        home: /home/admin
+
+    - name: Deploy ssh public key
+      authorized_key:
+        user: admin
+        state: present
+        manage_dir: yes
+        key: "{{ lookup('file', '/home/{{ username }}/.ssh/id_rsa.pub') }}"

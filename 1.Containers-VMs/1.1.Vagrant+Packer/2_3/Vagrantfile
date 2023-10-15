@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
         nginx.playbook = "configure_nginx.yml"
     end
     webserver.vm.provision "ansible" do |ssh|
-        nginx.playbook = "configure_ssh.yml"
+        ssh.playbook = "configure_ssh.yml"
     end
   end
 end
