@@ -20,4 +20,4 @@
         user: admin
         state: present
         manage_dir: yes
-        key: "{{ lookup('file', '/Users/motherwork/.ssh/id_rsa.pub') }}"
+        key: "{{ lookup('file', '/Users/<username>/.ssh/id_rsa.pub') }}"

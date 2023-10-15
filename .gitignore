@@ -29,3 +29,5 @@ override.tf.json
 # example: *tfplan*
 /1.Containers-VMs/1.1.Vagrant+Packer/2_1/.vagrant/
 /1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/
+/1.Containers-VMs/1.1.Vagrant+Packer/2_3/.vagrant/
+/1.Containers-VMs/1.1.Vagrant+Packer/2_3/provisioning/virtualbox.rb
