@@ -1,0 +1,15 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Create an empty file
+      file:
+        path: "/home/admin/datetime_file"
+        state: touch
+
+    - name: Add date and time to file
+      copy:
+        dest: "/home/admin/datetime_file"
+        content: |
+          "Date: {{ ansible_date_time.date }}"
+          "Time: {{ ansible_date_time.time }}"

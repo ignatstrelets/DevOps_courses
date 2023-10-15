@@ -1,0 +1,20 @@
+---
+
+- hosts: all
+  become: yes
+  tasks:
+    - name: Add script that removes temporary files
+      copy:
+        src:  files/remove_temp.sh
+        dest: /home/admin/remove_temp.sh
+
+    - name: Remove temporary files regularly
+      cron:
+        name: Remove temporary files
+        minute: "0"
+        hour: "12"
+        day: "*"
+        month: "*"
+        weekday: "sun"
+        user: admin
+        job : /home/admin/remove_temp.sh

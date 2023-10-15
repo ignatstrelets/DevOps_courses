@@ -1,18 +1,27 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/focal64"
-  config.vm.define "nginxserver" do |webserver|
-    webserver.vm.provider :virtualbox do |v|
+  config.vm.define "nginxserver" do |nginxserver|
+    nginxserver.vm.provider :virtualbox do |v|
       v.name = "nginxserver"
       v.memory = "1024"
       v.cpus = "1"
     end
-    webserver.vm.hostname = "nginxserver"
-    webserver.vm.network "forwarded_port", guest: 80, host: 8080
-    webserver.vm.provision "ansible" do |nginx|
-        nginx.playbook = "configure_nginx.yml"
+    nginxserver.vm.hostname = "nginxserver"
+    nginxserver.vm.network "forwarded_port", guest: 80, host: 8080
+    nginxserver.vm.provision "ansible" do |nginx|
+        nginx.playbook = "provisioning/configure_nginx.yml"
     end
-    webserver.vm.provision "ansible" do |ssh|
-        ssh.playbook = "configure_ssh.yml"
+    nginxserver.vm.provision "ansible" do |ssh|
+        ssh.playbook = "provisioning/configure_ssh.yml"
+    end
+    nginxserver.vm.provision "ansible" do |file|
+        file.playbook = "provisioning/create_datetime_file.yml"
+    end
+    nginxserver.vm.provision "ansible" do |apache|
+        apache.playbook = "provisioning/install_apache.yml"
+    end
+    nginxserver.vm.provision "ansible" do |clear|
+        clear.playbook = "provisioning/clear_temp_files.yml"
     end
   end
 end
