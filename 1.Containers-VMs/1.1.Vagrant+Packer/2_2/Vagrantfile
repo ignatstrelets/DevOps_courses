@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
         end
 # Use Custom Shell Script to Install Nginx (executed with root privileges by default)
       webserver.vm.provision "shell",
-         path: "/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/shell/install_nginx.sh"
+         path: "<path>/install_nginx.sh"
   end
 # Second Instance is a Database
   config.vm.define "database" do |database|
@@ -34,6 +34,6 @@ Vagrant.configure("2") do |config|
         end
 # Use Custom Shell Script to Install SQLite (executed with root privileges by default)
       database.vm.provision "shell",
-         path: "/Users/motherwork/Music/DATA/DATA/GODEV/itra/1.Containers-VMs/1.1.Vagrant+Packer/2_2/shell/install_sqlite.sh"
+         path: "<path>/install_sqlite.sh"
   end
 end
