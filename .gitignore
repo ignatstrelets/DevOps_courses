@@ -32,3 +32,4 @@ override.tf.json
 /1.Containers-VMs/1.1.Vagrant+Packer/2_3/.vagrant/
 /1.Containers-VMs/1.1.Vagrant+Packer/2_3/provisioning/virtualbox.rb
 
+/scp.md
