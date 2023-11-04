@@ -1,2 +1,1 @@
-# Put header here
-Put description here
+# Manual AWS Configuration
