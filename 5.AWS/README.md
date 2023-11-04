@@ -1,1 +1,1 @@
-# Manual AWS Configuration
+# Manual AWS Configuration Example
