@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# Minimal AWS S3 Operator.
+
+function get {
+    echo `aws s3 cp s3://$S3CTL_BUCKET/$1 ./`
+}
+
+function put {
+    echo `aws s3 cp $1 s3://$S3CTL_BUCKET/$1`
+}
+
+function remove {
+    echo `aws s3 rm s3://$S3CTL_BUCKET/$1`
+}
+if [[ -z "$S3CTL_BUCKET" ]]
+then
+        echo 'Set $S3CTL_BUCKET to your S3 bucket name.'
+else
+        echo "Operating with bucket: $S3CTL_BUCKET. Reference: 's3ctl help'."
+fi
+
+case $1 in
+    get )
+        get $2
+        ;;
+    put )
+        put $2
+        ;;
+    remove )
+        remove $2
+        ;;
+    help )
+        echo 'Get: "s3ctl get <obj_name>"'
+        echo 'Put: "s3ctl put <obj_name>"'
+        echo 'Remove: "s3ctl remove <obj_name>"'
+        ;;
+    * ) echo 'Invalid entry. Type "s3ctl help".'
+        exit 1
+        ;;
+esac

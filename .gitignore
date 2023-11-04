@@ -31,9 +31,10 @@ override.tf.json
 /1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/
 /1.Containers-VMs/1.1.Vagrant+Packer/2_3/.vagrant/
 /1.Containers-VMs/1.1.Vagrant+Packer/2_3/provisioning/virtualbox.rb
-./.DS_Store
-./1.Containers-VMs/.DS_Store
-./1.Containers-VMs/1.1.Vagrant+Packer/.DS_Store
-./1.Containers-VMs/1.3.Kubernetes/.DS_Store
-./jk_notes
+.DS_Store
+/1.Containers-VMs/.DS_Store
+/1.Containers-VMs/1.1.Vagrant+Packer/.DS_Store
+/1.Containers-VMs/1.3.Kubernetes/.DS_Store
+jk_notes
+/5.AWS/.DS_Store
 /scp.md
