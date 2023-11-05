@@ -1,0 +1,21 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "qorbani/golang-hello-world",
+    "Update": "true"
+  },
+    "Ports": [
+      {
+        "ContainerPort": 3000
+      }
+    ],
+  "Environment": [
+    {
+      "Name": "PORT",
+      "Value": "3000"
+    }
+  ],
+  "Memory": 128
+}
+
+
