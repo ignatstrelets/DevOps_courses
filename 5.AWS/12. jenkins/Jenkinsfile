@@ -1,0 +1,38 @@
+pipeline {
+    agent any
+
+    parameters {
+    string(name: "REMOTE_USER", defaultValue: 'ubuntu')
+    string(name: "REMOTE_HOST", defaultValue: 'ip-172-31-36-28')
+    }
+
+    environment {
+        DOCKER_HOST="unix://\$(pwd)/docker.sock"
+    }
+
+    stages {
+        stage('Forward Docker Socket on SSH') {
+            steps {
+                sh """ssh -nNT -L \
+                \$(pwd)/docker.sock:/var/run/docker.sock -o StreamLocalBindUnlink=yes ${params.REMOTE_USER}@${params.REMOTE_HOST} \
+                & echo \$! > /tmp/tunnel.pid"""
+                sleep 5
+                echo "OK"
+            }
+        }
+        stage('Deploy'){
+            steps {
+                script {
+                    sh "DOCKER_HOST=${DOCKER_HOST} docker ps -a"
+                }
+            }
+        }
+    }
+    post {
+        always {
+            script {
+                sh "pkill -F /tmp/tunnel.pid"
+            }
+        }
+    }
+}
