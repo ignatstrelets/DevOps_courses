@@ -1,0 +1,7 @@
+# sudo crontab -e
+
+# 0 0 1,15 * * find /tmp -mtime +14 -type f -size +5M -delete
+
+# sudo crontab -u root -l
+#
+# 0 0 1,15 * * find /tmp -mtime +14 -type f -size +5M -delete

@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    parameters {
+    string(name: "REMOTE_USER", defaultValue: 'ubuntu')
+    string(name: "REMOTE_HOST", defaultValue: 'ip-172-31-24-36')
+    }
+
+    stages {
+        stage('Test Docker via SSH') {
+            steps {
+                sh """ssh ${params.REMOTE_USER}@${params.REMOTE_HOST} " \
+                docker run hello-world" """
+                echo "OK"
+            }
+        }
+        stage('Forward Docker Socket on SSH') {
+            steps {
+                sh """ssh -nNT -L \
+                \$(pwd)/docker.sock:/var/run/docker.sock ${params.REMOTE_USER}@${params.REMOTE_HOST} \
+                & echo \$! > /tmp/tunnel.pid"""
+                sleep 5
+                echo "OK"
+            }
+        }
+    }
+}
