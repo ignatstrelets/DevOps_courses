@@ -43,3 +43,4 @@ jk_notes
 /6.Cloudformation-Terraform/2.terraform/.terraform.lock.hcl
 /6.Cloudformation-Terraform/2.terraform/terraform.tfstate
 /6.Cloudformation-Terraform/2.terraform/terraform.tfstate.backup
+/7.Azure/.terraform/

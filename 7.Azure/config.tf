@@ -1,7 +1,8 @@
-provider "azurerm" {
-  subscription_id = "your_subscription_id"
-  client_id       = "your_client_id"
-  client_secret   = "your_client_secret"
-  tenant_id       = "your_tenant_id"
-  features {}
+terraform {
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "~>2.0"
+    }
+  }
 }
