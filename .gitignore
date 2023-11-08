@@ -38,3 +38,8 @@ override.tf.json
 jk_notes
 /5.AWS/.DS_Store
 /scp.md
+/.gitignore
+/6.Cloudformation-Terraform/2.terraform/.terraform/
+/6.Cloudformation-Terraform/2.terraform/.terraform.lock.hcl
+/6.Cloudformation-Terraform/2.terraform/terraform.tfstate
+/6.Cloudformation-Terraform/2.terraform/terraform.tfstate.backup
