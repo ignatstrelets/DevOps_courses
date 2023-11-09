@@ -65,6 +65,9 @@
 #  account_tier             = "Standard"
 #  account_replication_type = "GRS"
 #  access_tier = "Hot"
+#######################################
+## Unable to set "account_kind = BlobStorage" due to unknown bug ("no such host")
+#######################################
 #  enable_https_traffic_only = true
 #}
 #
