@@ -35,6 +35,5 @@ resource "azurerm_linux_web_app" "webapp01" {
   resource_group_name = azurerm_resource_group.as-resources.name
   service_plan_id = azurerm_service_plan.web-sp.id
   site_config {
-
   }
 }
