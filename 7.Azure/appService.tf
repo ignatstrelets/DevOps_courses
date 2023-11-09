@@ -2,6 +2,15 @@ provider "azurerm" {
   features {}
 }
 
+terraform {
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "3.1.0"
+    }
+  }
+}
+
 resource "azurerm_resource_group" "as-resources" {
   name     = "app-service-resources"
   location =  "westus3"
@@ -26,14 +35,14 @@ resource "azurerm_service_plan" "web-sp" {
   resource_group_name = azurerm_resource_group.as-resources.name
   location            = azurerm_resource_group.as-resources.location
   os_type             = "Linux"
-  sku_name            = "P0v3"
+  sku_name            = "S1"
+
 }
 
-resource "azurerm_linux_web_app" "webapp01" {
+resource "azurerm_linux_web_app" "webapp01ignat" {
   location = azurerm_resource_group.as-resources.location
-  name = "webapp01"
+  name = "webapp01ignat"
   resource_group_name = azurerm_resource_group.as-resources.name
   service_plan_id = azurerm_service_plan.web-sp.id
-  site_config {
-  }
+  site_config {}
 }
