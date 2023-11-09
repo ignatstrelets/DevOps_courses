@@ -1,7 +1,3 @@
-provider "azurerm" {
-  features {}
-}
-
 terraform {
   required_providers {
     azurerm = {
@@ -10,6 +6,11 @@ terraform {
     }
   }
 }
+
+provider "azurerm" {
+  features {}
+}
+
 
 resource "azurerm_resource_group" "as-resources" {
   name     = "app-service-resources"
