@@ -44,3 +44,6 @@ jk_notes
 /6.Cloudformation-Terraform/2.terraform/terraform.tfstate
 /6.Cloudformation-Terraform/2.terraform/terraform.tfstate.backup
 /7.Azure/.terraform/
+/8.Cloudformation-Bash/wp-conf-backup
+/8.Cloudformation-Bash/wp-custom-conf-backup
+/8.Cloudformation-Bash/g-r.html
