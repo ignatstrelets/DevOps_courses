@@ -177,11 +177,11 @@ cat > /etc/httpd/conf.d/wp.conf <<EOF
         </Directory>
 
         <Location /node>
-
                 ProxyPreserveHost On
                 ProxyPass  http://localhost:9000/
                 ProxyPassReverse   http://localhost:9000/
         </Location>
+
         Options FollowSymLinks
 
 </VirtualHost>
