@@ -4,7 +4,7 @@
 
 #NOTE: add your custom data
 
-##sudo sh -c "
+sudo sh -c """
 yum -y update
 
 yum -y install httpd
@@ -47,7 +47,7 @@ cat > home/centos/wordpress/wp-config.php <<EOF
  * The base configuration for WordPress
  *
  * The wp-config.php creation script uses this file during the installation.
- * You don't have to use the web site, you can copy this file to "wp-config.php"
+ * You don't have to use the web site, you can copy this file to wp-config.php
  * and fill in the values.
  *
  * This file contains the following configurations:
@@ -122,7 +122,7 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
  */
-/* Add any custom values between this line and the "stop editing" line. */
+/* Add any custom values between this line and the stop editing line. */
 
 
 
@@ -149,6 +149,8 @@ wp core install --url=localhost/wordpress --title=Example --admin_user=superviso
 
 systemctl restart httpd mysqld
 
+/usr/sbin/setsebool httpd_can_network_connect 1
+
 touch /etc/httpd/conf.d/wp.conf
 cat > /etc/httpd/conf.d/wp.conf <<EOF
 <VirtualHost *:80>
@@ -167,7 +169,7 @@ cat > /etc/httpd/conf.d/wp.conf <<EOF
 
         ErrorLog /var/log/httpd/error.log
 
-        <Directory "/var/www/html/wordpress">
+        <Directory /var/www/html/wordpress>
         AllowOverride All
         Options FollowSymLinks
         Order allow,deny
@@ -212,7 +214,7 @@ dnf install -y git
 
 npm install -g gatsby-cli
 
-#"
+"""
 
 mkdir /home/centos/gatsby-projects
 cd /home/centos/gatsby-projects
@@ -220,10 +222,8 @@ cd /home/centos/gatsby-projects
 gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
 cd my-hello-world-starter
 
-
-
 gatsby build
-npm run serve -- --host internal
+npm run serve -- --host localhost
 
 
 
