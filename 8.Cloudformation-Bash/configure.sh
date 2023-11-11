@@ -4,7 +4,7 @@
 
 #NOTE: add your custom data
 
-#sudo sh -c "
+sudo sh -c "
 yum -y update
 
 yum -y install httpd
@@ -19,14 +19,14 @@ dnf install -y https://rpms.remirepo.net/enterprise/remi-release-8.rpm
 dnf module enable php:remi-7.4 -y
 dnf install -y php php-mysqlnd
 
-cat > ~/.my.cnf <<EOF
+cat > /home/centos/.my.cnf <<EOF
 [client]
 user = root
 password =
 EOF
 
-touch ~/wp.sql
-cat > ~/wp.sql <<EOF
+touch /home/centos/wp.sql
+cat > /home/centos/wp.sql <<EOF
 CREATE DATABASE wordpress CHARACTER SET utf8 COLLATE utf8_bin;
 CREATE USER 'wordpressuser'@'localhost' IDENTIFIED BY '<your_custom_password>';
 GRANT ALL PRIVILEGES ON wordpress.* TO wordpressuser@localhost;
@@ -41,7 +41,7 @@ wget http://wordpress.org/latest.tar.gz
 
 tar -xzvf latest.tar.gz
 
-cat > ~/wordpress/wp-config.php <<EOF
+cat > home/centos/wordpress/wp-config.php <<EOF
 <?php
 /**
  * The base configuration for WordPress
@@ -141,12 +141,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 require_once ABSPATH . 'wp-settings.php';
 EOF
 
-cp -r ~/wordpress/* /var/www/html
+mkdir /var/www/html/blog/
+cp -r /home/centos/wordpress/* /var/www/html/blog/
 
 systemctl restart httpd mysqld
 
-dnf module enable -y nodejs:12
-dnf install -y nodejs
 
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
@@ -161,11 +160,12 @@ dnf install -y git
 
 npm install -g gatsby-cli
 
-mkdir ~/gatsby-projects
-cd ~/gatsby-projects
+mkdir /home/centos/gatsby-projects
+cd /home/centos/gatsby-projects
 
 gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
 cd my-hello-world-starter
+"
 gatsby develop --host="<your_internal_ip>"
 
 #"
