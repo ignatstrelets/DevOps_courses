@@ -4,7 +4,7 @@
 
 #NOTE: add your custom data
 
-sudo sh -c "
+##sudo sh -c "
 yum -y update
 
 yum -y install httpd
@@ -127,9 +127,6 @@ $table_prefix = 'wp_';
 
 
 /* That's all, stop editing! Happy publishing. */
-define(‘WP_DEBUG’, true);
-define(‘WP_DEBUG_LOG’, true);
-define(‘WP_DEBUG_DISPLAY’, true);
 define( 'SCRIPT_DEBUG', true );
 
 /** Absolute path to the WordPress directory. */
@@ -142,11 +139,66 @@ require_once ABSPATH . 'wp-settings.php';
 EOF
 
 mkdir /var/www/html/blog/
-cp -r /home/centos/wordpress/* /var/www/html/blog/
+cp -r /home/centos/wordpress/* /var/www/html/wordpress/
+
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+php wp-cli.phar --info
+chmod +x wp-cli.phar
+mv wp-cli.phar /usr/local/bin/wp
+wp core install --url=localhost/wordpress --title=Example --admin_user=supervisor --admin_password=strongpassword --admin_email=info@example.com
 
 systemctl restart httpd mysqld
 
+touch /etc/httpd/conf.d/wp.conf
+cat > /etc/httpd/conf.d/wp.conf <<EOF
+<VirtualHost *:80>
+        ServerAdmin root@localhost
+        ServerName wordpress
 
+        ProxyRequests Off
+        ProxyVia Full
+
+        <Proxy *>
+               Require all granted
+        </Proxy>
+
+        DirectoryIndex index.php index.html
+        DocumentRoot /var/www/html/wordpress
+
+        ErrorLog /var/log/httpd/error.log
+
+        <Directory "/var/www/html/wordpress">
+        AllowOverride All
+        Options FollowSymLinks
+        Order allow,deny
+        Allow from all
+        </Directory>
+
+        <Location /node>
+
+                ProxyPreserveHost On
+                ProxyPass  http://localhost:9000/
+                ProxyPassReverse   http://localhost:9000/
+        </Location>
+        Options FollowSymLinks
+
+</VirtualHost>
+EOF
+
+touch /var/www/html/wordpress/.htaccess
+cat > /var/www/html/wordpress/.htaccess <<EOF
+<IfModule mod_rewrite.c>
+                RewriteEngine On
+                RewriteBase /wordpress/
+                RewriteRule ^index\.php$ - [L]
+                RewriteCond $1 ^(index\.php)?$ [OR]
+                RewriteCond $1 \.(gif|jpg|png|ico|css|js)$ [NC,OR]
+                RewriteCond %{REQUEST_FILENAME} -f [OR]
+                RewriteCond %{REQUEST_FILENAME} -d
+                RewriteRule ^(.*)$ - [S=1]
+                RewriteRule . /index.php [L]
+        </IfModule>
+EOF
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
@@ -160,16 +212,19 @@ dnf install -y git
 
 npm install -g gatsby-cli
 
+#"
+
 mkdir /home/centos/gatsby-projects
 cd /home/centos/gatsby-projects
 
 gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
 cd my-hello-world-starter
-"
-gatsby develop --host="<your_internal_ip>"
 
-#"
 
-##
 
-##
+gatsby build
+npm run serve -- --host internal
+
+
+
+
