@@ -27,22 +27,22 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
-/1.Containers-VMs/1.1.Vagrant+Packer/2_1/.vagrant/
-/1.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/
-/1.Containers-VMs/1.1.Vagrant+Packer/2_3/.vagrant/
-/1.Containers-VMs/1.1.Vagrant+Packer/2_3/provisioning/virtualbox.rb
+/2.Containers-VMs/1.1.Vagrant+Packer/2_1/.vagrant/
+/2.Containers-VMs/1.1.Vagrant+Packer/2_2/.vagrant/
+/2.Containers-VMs/1.1.Vagrant+Packer/2_3/.vagrant/
+/2.Containers-VMs/1.1.Vagrant+Packer/2_3/provisioning/virtualbox.rb
 .DS_Store
-/1.Containers-VMs/.DS_Store
-/1.Containers-VMs/1.1.Vagrant+Packer/.DS_Store
-/1.Containers-VMs/1.3.Kubernetes/.DS_Store
+/2.Containers-VMs/.DS_Store
+/2.Containers-VMs/1.1.Vagrant+Packer/.DS_Store
+/2.Containers-VMs/1.3.Kubernetes/.DS_Store
 jk_notes
-/5.AWS/.DS_Store
+/6.AWS/.DS_Store
 /scp.md
 /.gitignore
-/6.Cloudformation-Terraform/2.terraform/.terraform/
-/6.Cloudformation-Terraform/2.terraform/.terraform.lock.hcl
-/6.Cloudformation-Terraform/2.terraform/terraform.tfstate
-/6.Cloudformation-Terraform/2.terraform/terraform.tfstate.backup
+/7.Cloudformation-Terraform/2.terraform/.terraform/
+/7.Cloudformation-Terraform/2.terraform/.terraform.lock.hcl
+/7.Cloudformation-Terraform/2.terraform/terraform.tfstate
+/7.Cloudformation-Terraform/2.terraform/terraform.tfstate.backup
 /8.Azure/.terraform/
 /9.Terraform-Bash/wp-conf-backup
 /9.Terraform-Bash/wp-custom-conf-backup
