@@ -45,6 +45,25 @@ resource "aws_security_group" "alb-sg" {
   }
 }
 
+resource "aws_security_group" "web-server-sg" {
+  name = "web-server-sg"
+  vpc_id = aws_vpc.existing_vpc.id
+
+  ingress {
+    from_port = 80
+    protocol  = "tcp"
+    to_port   = 80
+    cidr_blocks = [aws_vpc.existing_vpc.cidr_block]
+  }
+
+  egress {
+    from_port        = 0
+    to_port          = 0
+    protocol         = "-1"
+    cidr_blocks      = [aws_vpc.existing_vpc.cidr_block]
+  }
+}
+
 resource "aws_lb" "web-server-alb" {
   name               = "tf-wordpress-node"
   internal           = false
@@ -122,7 +141,7 @@ resource "aws_instance" "web-server" {
   subnet_id     = "subnet-0aeac58bd1ec5aa27"
   instance_type = var.instance_size
   key_name      = aws_key_pair.web-server-key-pair.key_name
-  vpc_security_group_ids = ["sg-0e24c7bf6f097d197"]
+  vpc_security_group_ids = [aws_security_group.web-server-sg.id]
   associate_public_ip_address = var.public_ip_bool
   tags = {
     Name = var.instance_name
