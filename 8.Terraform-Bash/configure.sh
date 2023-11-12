@@ -225,8 +225,6 @@ gatsby build
 ln -s "$(which node)" /usr/bin/node
 ln -s "$(which npm)" /usr/bin/npm
 
-setenforce Permissive
-
 mkdir /root/scripts
 touch /root/scripts/startnodehello.sh
 cat > /root/scripts/startnodehello.sh <<EOF

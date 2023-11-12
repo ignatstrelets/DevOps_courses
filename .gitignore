@@ -53,3 +53,4 @@ jk_notes
 /8.Terraform-Bash/.htaccess
 /8.Terraform-Bash/terraform/.terraform/
 /8.Terraform-Bash/terraform/.terraform.lock.hcl
+/8.Terraform-Bash/terraform/terraform.tfvars
