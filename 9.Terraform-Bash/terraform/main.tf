@@ -138,7 +138,7 @@ resource "aws_lb_target_group_attachment" "node_attachment" {
 
 resource "aws_instance" "web-server" {
   ami           = "ami-080b9a28388eeb1cb"
-  subnet_id     = "subnet-0aeac58bd1ec5aa27"
+  subnet_id     = [for s in data.aws_subnet.public : s.id][0]
   instance_type = var.instance_size
   key_name      = aws_key_pair.web-server-key-pair.key_name
   vpc_security_group_ids = [aws_security_group.web-server-sg.id]
