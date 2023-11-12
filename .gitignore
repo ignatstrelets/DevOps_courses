@@ -54,3 +54,4 @@ jk_notes
 /8.Terraform-Bash/terraform/.terraform/
 /8.Terraform-Bash/terraform/.terraform.lock.hcl
 /8.Terraform-Bash/terraform/terraform.tfvars
+/8.Terraform-Bash/terraform/test.tf

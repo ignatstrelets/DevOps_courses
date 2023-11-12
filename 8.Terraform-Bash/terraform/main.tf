@@ -1,15 +1,129 @@
-resource "aws_key_pair" "web-server-key-pair" {
-  key_name   = "web-server-key"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDUIYUIxNxDPssYRvWLyZuL/C17HrAT9OVn34MX0V4CKNqcloy5n/6ZnrdivwpwG1RvB17OfK8f90IPWOP2c3IPlKSycBU9Ey3VzYQOBSo4bx3d8e6bHQk/kj/XpY9N2cYpqvu70krm5urnqJYCYdg4tA623osRNDMuMAFX0iCgLuO+ZDAA2hGr8uh1GZihlE6ggERgqL3EFcTKYpIiiGYCTxJnd0P1BmZLJwI2hRBU6LzR6F1uolqReJnRC7t/hIaPa7DLQCHSAt10W+37Fy1qoVG2UP+1UrtHTzaBXRa3ZXpm71k7r266w+IiA4Wn3+cfvViHPpVovbFtLZ6moHLMhNrCj1KcDexBdDvBPili+6+TGwjM6+QR6++USvyWTVkb4CB5nvF4VEtbrX9fQoipEUd0VY+LsHu5yTcfAYmqO+oHd5mpYZcQ4GNRP1Nw4vU3HHMWL1V+coYDBMWeME/zP/PLg1zP4IfjBS+otdRm8h0BSMWx5lkrQu2YXLVrWDk="
+import {
+  to = aws_vpc.existing_vpc
+  id = var.vpc
 }
 
-#resource "aws_alb" "" {}
+resource "aws_vpc" "existing_vpc" {}
+
+data "aws_subnets" "existing_subnets" {
+  filter {
+    name   = "vpc-id"
+    values = [aws_vpc.existing_vpc.id]
+  }
+
+  tags = {
+    Tier = "Public"
+  }
+}
+
+data "aws_subnet" "public" {
+  for_each = toset(data.aws_subnets.existing_subnets.ids)
+  id       = each.value
+}
+
+resource "aws_key_pair" "web-server-key-pair" {
+  key_name   = "web-server-key"
+  public_key = var.ssh_public_key
+}
+
+resource "aws_security_group" "alb-sg" {
+  name        = "alb-sg"
+  vpc_id      = aws_vpc.existing_vpc.id
+
+  ingress {
+    from_port        = 80
+    to_port          = 80
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+  }
+
+  egress {
+    from_port        = 80
+    to_port          = 80
+    protocol         = "tcp"
+    cidr_blocks      = [aws_vpc.existing_vpc.cidr_block]
+  }
+}
+
+resource "aws_lb" "web-server-alb" {
+  name               = "tf-wordpress-node"
+  internal           = false
+  load_balancer_type = "application"
+  security_groups    = [aws_security_group.alb-sg.id]
+  subnets = [for s in data.aws_subnet.public : s.id]
+  enable_deletion_protection = false
+}
+
+resource "aws_lb_listener" "http" {
+  load_balancer_arn = aws_lb.web-server-alb.arn
+  port = 80
+  protocol = "HTTP"
+  default_action {
+    type = "forward"
+    target_group_arn = aws_lb_target_group.wordpress.arn
+  }
+}
+
+resource "aws_lb_listener_rule" "node_rule" {
+  listener_arn = aws_lb_listener.http.arn
+  action {
+    type = "forward"
+    target_group_arn = aws_lb_target_group.node.arn
+  }
+  condition {
+    path_pattern {
+      values = ["/node/*"]
+    }
+  }
+}
+
+resource "aws_lb_target_group" "wordpress" {
+  name = "wordpress"
+  port     = 80
+  protocol = "HTTP"
+  vpc_id = aws_vpc.existing_vpc.id
+  health_check {
+    healthy_threshold   = 10
+    unhealthy_threshold = 2
+    timeout             = 5
+    port                = "80"
+    path                = "/wordpress"
+    interval            = 30
+  }
+}
+
+resource "aws_lb_target_group" "node" {
+  name = "node"
+  port     = 80
+  protocol = "HTTP"
+  vpc_id = aws_vpc.existing_vpc.id
+  health_check {
+    healthy_threshold   = 10
+    unhealthy_threshold = 2
+    timeout             = 5
+    port                = "80"
+    path                = "/node"
+    interval            = 30
+  }
+}
+
+resource "aws_lb_target_group_attachment" "wordpress_attachment" {
+  target_group_arn = aws_lb_target_group.wordpress.arn
+  target_id        = aws_instance.web-server.id
+}
+
+resource "aws_lb_target_group_attachment" "node_attachment" {
+  target_group_arn = aws_lb_target_group.node.arn
+  target_id        = aws_instance.web-server.id
+}
 
 resource "aws_instance" "web-server" {
-  ami           = "ami-0e339d7c1ad39ea85"
+  ami           = "ami-080b9a28388eeb1cb"
+  subnet_id     = "subnet-0aeac58bd1ec5aa27"
   instance_type = var.instance_size
   key_name      = aws_key_pair.web-server-key-pair.key_name
-  vpc_security_group_ids = ["sg-0034b0b24ce1f56c8"]
+  vpc_security_group_ids = ["sg-0e24c7bf6f097d197"]
+  associate_public_ip_address = var.public_ip_bool
   tags = {
     Name = var.instance_name
   }
