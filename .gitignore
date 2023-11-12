@@ -51,3 +51,5 @@ jk_notes
 /8.Terraform-Bash/httpd-conf-wp
 /8.Terraform-Bash/wp.conf
 /8.Terraform-Bash/.htaccess
+/8.Terraform-Bash/terraform/.terraform/
+/8.Terraform-Bash/terraform/.terraform.lock.hcl

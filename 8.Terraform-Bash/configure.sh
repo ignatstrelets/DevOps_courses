@@ -214,8 +214,6 @@ dnf install -y git
 
 npm install -g gatsby-cli
 
-"""
-
 mkdir /home/centos/gatsby-projects
 cd /home/centos/gatsby-projects
 
@@ -223,8 +221,40 @@ gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hel
 cd my-hello-world-starter
 
 gatsby build
-npm run serve -- --host localhost
+
+ln -s "$(which node)" /usr/bin/node
+ln -s "$(which npm)" /usr/bin/npm
+
+setenforce Permissive
+
+mkdir /root/scripts
+touch /root/scripts/startnodehello.sh
+cat > /root/scripts/startnodehello.sh <<EOF
+#!/bin/bash
+
+cd /home/centos/gatsby-projects/my-hello-world-starter && npm run serve -- --host localhost
+EOF
+
+touch /etc/systemd/system/nodehello.service
+cat > /etc/systemd/system/nodehello.service <<EOF
+[Unit]
+Description = start node
+After = network.target
+
+[Service]
+Type = simple
+ExecStart = /root/scripts/startnodehello.sh
+
+[Install]
+WantedBy = multi-user.target
+EOF
+
+systemctl daemon-reload
+systemctl enable nodehello
+systemctl start nodehello
 
 
+
+"""
 
 
