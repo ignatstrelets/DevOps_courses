@@ -55,3 +55,4 @@ jk_notes
 /9.Terraform-Bash/terraform/.terraform.lock.hcl
 /9.Terraform-Bash/terraform/terraform.tfvars
 /9.Terraform-Bash/terraform/test.tf
+/7.Cloudformation-Terraform/1.cloudformation/cf-cli

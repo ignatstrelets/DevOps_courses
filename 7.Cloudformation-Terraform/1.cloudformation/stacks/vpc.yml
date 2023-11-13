@@ -1,0 +1,129 @@
+---
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: VPC
+
+Resources:
+
+  VPC:
+    Type: AWS::EC2::VPC
+    DeletionPolicy: 'Delete'
+    Properties:
+      CidrBlock: '10.0.0.0/16'
+      EnableDnsSupport: 'true'
+      EnableDnsHostnames: 'true'
+      Tags:
+        - Key: Name
+          Value: 'cf-vpc'
+
+  IGW:
+    Type: AWS::EC2::InternetGateway
+    DeletionPolicy: 'Delete'
+    Properties:
+      Tags:
+        - Key: Name
+          Value: 'cf-igw'
+
+  IGWAttachment:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref VPC
+      InternetGatewayId: !Ref IGW
+
+  PublicA:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref VPC
+      CidrBlock: '10.0.0.0/20'
+      MapPublicIpOnLaunch: 'true'
+      AvailabilityZone: 'eu-north-1a'
+      Tags:
+        - Key: Name
+          Value: 'cf-public-a'
+
+  PublicB:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref VPC
+      CidrBlock: '10.0.16.0/20'
+      MapPublicIpOnLaunch: 'true'
+      AvailabilityZone: 'eu-north-1b'
+      Tags:
+        - Key: Name
+          Value: 'cf-public-b'
+
+  PrivateA:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref VPC
+      CidrBlock: '10.0.128.0/20'
+      MapPublicIpOnLaunch: 'false'
+      AvailabilityZone: 'eu-north-1a'
+      Tags:
+        - Key: Name
+          Value: 'cf-private-a'
+
+  PrivateB:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref VPC
+      CidrBlock: '10.0.144.0/20'
+      MapPublicIpOnLaunch: 'false'
+      AvailabilityZone: 'eu-north-1a'
+      Tags:
+        - Key: Name
+          Value: 'cf-private-b'
+
+  PublicRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref VPC
+      Tags:
+        - Key: Name
+          Value: 'cf-public-route-table'
+
+  InternetGatewayRoute:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: '0.0.0.0/0'
+      GatewayId: !Ref IGW
+
+  PrivateRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref VPC
+      Tags:
+        - Key: Name
+          Value: 'cf-public-route-table'
+
+  AssociationPublicA:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      SubnetId: !Ref PublicA
+
+  AssociationPublicB:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      SubnetId: !Ref PublicB
+
+  AssociationPrivateA:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId: !Ref PrivateRouteTable
+      SubnetId: !Ref PrivateA
+
+  AssociationPrivateB:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId: !Ref PrivateRouteTable
+      SubnetId: !Ref PrivateB
+
+Outputs:
+  VpcId:
+    Description: VPC ID
+    Value: !Ref VPC
+    Export:
+      Name: VpcId
