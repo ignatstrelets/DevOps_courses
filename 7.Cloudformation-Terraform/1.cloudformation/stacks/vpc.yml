@@ -69,7 +69,7 @@ Resources:
       VpcId: !Ref VPC
       CidrBlock: '10.0.144.0/20'
       MapPublicIpOnLaunch: 'false'
-      AvailabilityZone: 'eu-north-1a'
+      AvailabilityZone: 'eu-north-1b'
       Tags:
         - Key: Name
           Value: 'cf-private-b'
@@ -121,9 +121,59 @@ Resources:
       RouteTableId: !Ref PrivateRouteTable
       SubnetId: !Ref PrivateB
 
+  DBSubnetGroup:
+    Type: AWS::RDS::DBSubnetGroup
+    Properties:
+      DBSubnetGroupName: "db-subnet-group"
+      DBSubnetGroupDescription: "Database Subnet Group"
+      SubnetIds:
+        - !Ref PrivateA
+        - !Ref PrivateB
+
+  RedisSubnetGroup:
+    Type: AWS::ElastiCache::SubnetGroup
+    Properties:
+      CacheSubnetGroupName: "db-subnet-group"
+      Description: "Database Subnet Group"
+      SubnetIds:
+        - !Ref PrivateA
+        - !Ref PrivateB
+
 Outputs:
+
   VpcId:
-    Description: VPC ID
+    Description: VPC Id
     Value: !Ref VPC
     Export:
       Name: VpcId
+
+  PublicAId:
+    Description:  Public A Id
+    Value: !Ref PublicA
+    Export:
+      Name: PublicAId
+
+  PublicBId:
+    Description:  Public B Id
+    Value: !Ref PublicB
+    Export:
+      Name: PublicBId
+
+  PrivateAId:
+    Description:  Private A Id
+    Value: !Ref PrivateA
+    Export:
+      Name: PrivateAId
+
+  PrivateBId:
+    Description:  Private B Id
+    Value: !Ref PrivateB
+    Export:
+      Name: PrivateBId
+
+  VpcCidrBlock:
+    Description: VPC Cidr Block
+    Value: !GetAtt VPC.CidrBlock
+    Export:
+      Name: VpcCidrBlock
+
