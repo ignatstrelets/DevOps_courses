@@ -39,6 +39,14 @@ Resources:
           FromPort: 80
           ToPort: 80
           SourceSecurityGroupId: !Ref ELBSG
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          SourceSecurityGroupId: !Ref ELBSG
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: '89.232.40.100/32'
       SecurityGroupEgress:
         - IpProtocol: tcp
           FromPort: 80

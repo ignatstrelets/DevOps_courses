@@ -11,7 +11,7 @@ Resources:
       LaunchTemplateName: 'ubuntu-nginx'
       VersionDescription: 1
       LaunchTemplateData:
-        ImageId: 'ami-077f3abe5acce17a0'
+        ImageId: 'ami-0993ce0c958de07ca'
         InstanceType: 't3.micro'
         KeyName:
           Fn::ImportValue:
