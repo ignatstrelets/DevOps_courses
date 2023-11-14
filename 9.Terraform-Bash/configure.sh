@@ -250,9 +250,6 @@ EOF
 systemctl daemon-reload
 systemctl enable nodehello
 systemctl start nodehello
-
-
-
 """
 
 
