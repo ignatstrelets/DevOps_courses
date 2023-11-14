@@ -30,6 +30,21 @@ resource "aws_security_group" "asg-sg" {
     protocol  = "tcp"
     security_groups = [aws_security_group.elb-sg.id]
   }
+
+  ingress {
+    from_port = 443
+    to_port   = 443
+    protocol  = "tcp"
+    security_groups = [aws_security_group.elb-sg.id]
+  }
+
+  ingress {
+    from_port = 22
+    to_port   = 22
+    protocol  = "tcp"
+    cidr_blocks = ["<your_ip>"]
+  }
+
   egress {
     from_port = 0
     to_port   = 0
@@ -106,17 +121,3 @@ resource "aws_security_group" "memc-sg" {
     Name = "memc-sg"
   }
 }
-
-#resource "aws_db_subnet_group" "db-subnet-group" {
-#  subnet_ids = [aws_subnet.private-a.id, aws_subnet.private-b.id]
-#}
-#
-#resource "aws_elasticache_subnet_group" "redis-subnet-group" {
-#  subnet_ids = [aws_subnet.private-a.id, aws_subnet.private-b.id]
-#  name       = "redis-subnet-group"
-#}
-#
-#resource "aws_elasticache_subnet_group" "memcached-subnet-group" {
-#  subnet_ids = [aws_subnet.private-a.id, aws_subnet.private-b.id]
-#  name       = "memcached-subnet-group"
-#}

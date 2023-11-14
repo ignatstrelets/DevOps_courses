@@ -110,7 +110,4 @@ resource "aws_elasticache_subnet_group" "ec-subnet-group" {
   name       = "ec-subnet-group"
 }
 
-#resource "aws_elasticache_subnet_group" "memcached-subnet-group" {
-#  subnet_ids = [aws_subnet.private-a.id, aws_subnet.private-b.id]
-#  name       = "memcached-subnet-group"
-#}
+

@@ -1,5 +1,5 @@
 resource "aws_launch_template" "ubuntu-nginx" {
-  image_id = "ami-077f3abe5acce17a0"
+  image_id = "ami-0993ce0c958de07ca"
   instance_type = "t3.micro"
   vpc_security_group_ids = [aws_security_group.asg-sg.id]
   key_name = aws_key_pair.deployer.key_name
@@ -23,7 +23,7 @@ resource "aws_autoscaling_policy" "increment" {
   policy_type = "StepScaling"
   adjustment_type = "ChangeInCapacity"
   step_adjustment {
-    metric_interval_lower_bound = 0
+    metric_interval_upper_bound = 0
     scaling_adjustment = 1
   }
 }
