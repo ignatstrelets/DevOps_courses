@@ -101,5 +101,16 @@ resource "aws_route_table_association" "private-b" {
   subnet_id = aws_subnet.private-b.id
 }
 
+resource "aws_db_subnet_group" "db-subnet-group" {
+  subnet_ids = [aws_subnet.private-a.id, aws_subnet.private-b.id]
+}
 
+resource "aws_elasticache_subnet_group" "ec-subnet-group" {
+  subnet_ids = [aws_subnet.private-a.id, aws_subnet.private-b.id]
+  name       = "ec-subnet-group"
+}
 
+#resource "aws_elasticache_subnet_group" "memcached-subnet-group" {
+#  subnet_ids = [aws_subnet.private-a.id, aws_subnet.private-b.id]
+#  name       = "memcached-subnet-group"
+#}

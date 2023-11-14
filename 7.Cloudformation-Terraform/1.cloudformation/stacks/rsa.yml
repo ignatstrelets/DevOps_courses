@@ -9,7 +9,7 @@ Resources:
     Type: AWS::EC2::KeyPair
     Properties:
       KeyName: 'cf-rsa-key-pair'
-      PublicKeyMaterial: 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCG+pyqPUTTp9056vj9vCAQVQ9q3OF9a8F1ES4Rlmv1aiJAfRxLfJIYKM620q8rgQoVHoWM9Kr+bYcyuLPcg7ixuEakao+AJKL8wRl/TZtk6aTddEjSmlTcMgQhNjMHrR3IfwSEeiTm4+4ZE6kUVQldLi2YaFNa1L2g1Zw4Z5SqmwIDAQAB'
+      PublicKeyMaterial: '<your custom id_rsa.pub>'
 
 Outputs:
 

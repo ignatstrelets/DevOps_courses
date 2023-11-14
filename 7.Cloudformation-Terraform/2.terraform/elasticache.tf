@@ -4,7 +4,7 @@ resource "aws_elasticache_cluster" "redis" {
   node_type            = "cache.t4g.micro"
   num_cache_nodes      = 1
   port                 = 6379
-  subnet_group_name = aws_elasticache_subnet_group.redis-subnet-group.name
+  subnet_group_name = aws_elasticache_subnet_group.ec-subnet-group.name
   security_group_ids = [aws_security_group.redis-sg.id]
 }
 
@@ -14,6 +14,6 @@ resource "aws_elasticache_cluster" "memcached" {
   node_type            = "cache.t4g.micro"
   num_cache_nodes      = 1
   port                 = 11211
-  subnet_group_name = aws_elasticache_subnet_group.memcached-subnet-group.name
+  subnet_group_name = aws_elasticache_subnet_group.ec-subnet-group.name
   security_group_ids = [aws_security_group.memc-sg.id]
 }

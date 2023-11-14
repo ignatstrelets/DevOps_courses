@@ -1,0 +1,86 @@
+---
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: Autoscaling Group
+
+Resources:
+
+  LaunchTemplate:
+    Type: AWS::EC2::LaunchTemplate
+    Properties:
+      LaunchTemplateName: 'ubuntu-nginx'
+      VersionDescription: 1
+      LaunchTemplateData:
+        ImageId: 'ami-077f3abe5acce17a0'
+        InstanceType: 't3.micro'
+        KeyName:
+          Fn::ImportValue:
+            RSAKeyName
+        SecurityGroupIds:
+          - Fn::ImportValue:
+              WebServerSGId
+
+
+  ASG:
+    Type: AWS::AutoScaling::AutoScalingGroup
+    Properties:
+      MaxSize: 4
+      MinSize: 1
+      DesiredCapacity: 1
+      LaunchTemplate:
+        LaunchTemplateId: !Ref LaunchTemplate
+        Version: 1
+      VPCZoneIdentifier:
+        - Fn::ImportValue:
+            PublicAId
+        - Fn::ImportValue:
+            PublicBId
+      LoadBalancerNames:
+        - Fn::ImportValue:
+            ELBName
+
+  IncrementPolicy:
+    Type: AWS::AutoScaling::ScalingPolicy
+    Properties:
+      AutoScalingGroupName: !Ref ASG
+      PolicyType: 'StepScaling'
+      AdjustmentType: 'ChangeInCapacity'
+      StepAdjustments:
+        - ScalingAdjustment: 1
+          MetricIntervalUpperBound: 0
+
+  DecrementPolicy:
+    Type: AWS::AutoScaling::ScalingPolicy
+    Properties:
+      AutoScalingGroupName: !Ref ASG
+      PolicyType: 'StepScaling'
+      AdjustmentType: 'ChangeInCapacity'
+      StepAdjustments:
+        - ScalingAdjustment: -1
+          MetricIntervalLowerBound: 0
+
+  GreaterThan70:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      Namespace: "AWS/EC2"
+      MetricName: "CPUUtilization"
+      Statistic: "Average"
+      Threshold: 70
+      ComparisonOperator: "GreaterThanThreshold"
+      EvaluationPeriods: 1
+      Period: 120
+      AlarmActions:
+        - !Ref IncrementPolicy
+
+  LessThan15:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      Namespace: "AWS/EC2"
+      MetricName: "CPUUtilization"
+      Statistic: "Average"
+      Threshold: 15
+      ComparisonOperator: "LessThanThreshold"
+      EvaluationPeriods: 1
+      Period: 120
+      AlarmActions:
+        - !Ref DecrementPolicy

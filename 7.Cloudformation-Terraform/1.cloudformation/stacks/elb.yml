@@ -1,0 +1,41 @@
+---
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: Autoscaling Group
+
+Resources:
+
+  ELB:
+    Type: AWS::ElasticLoadBalancing::LoadBalancer
+    Properties:
+      LoadBalancerName: 'cf-elb'
+      Subnets:
+        - Fn::ImportValue:
+            PublicAId
+        - Fn::ImportValue:
+            PublicBId
+      CrossZone: 'true'
+      SecurityGroups:
+        - Fn::ImportValue:
+            ELBSGId
+      Listeners:
+        - LoadBalancerPort: 80
+          Protocol: 'http'
+          InstancePort: 80
+          InstanceProtocol: 'http'
+      HealthCheck:
+        HealthyThreshold: 10
+        Interval: 5
+        Target: 'HTTP:80/index.html'
+        Timeout: 4
+        UnhealthyThreshold: 2
+
+Outputs:
+
+  ELBName:
+    Description: ELB Name
+    Value: !Ref ELB
+    Export:
+      Name: ELBName
+
+

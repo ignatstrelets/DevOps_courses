@@ -130,11 +130,11 @@ Resources:
         - !Ref PrivateA
         - !Ref PrivateB
 
-  RedisSubnetGroup:
+  ECSubnetGroup:
     Type: AWS::ElastiCache::SubnetGroup
     Properties:
-      CacheSubnetGroupName: "db-subnet-group"
-      Description: "Database Subnet Group"
+      CacheSubnetGroupName: "ec-subnet-group"
+      Description: "ElastiCache Subnet Group"
       SubnetIds:
         - !Ref PrivateA
         - !Ref PrivateB
@@ -176,4 +176,16 @@ Outputs:
     Value: !GetAtt VPC.CidrBlock
     Export:
       Name: VpcCidrBlock
+
+  DBSubnetGroupName:
+    Description: Database Subnet Group Name
+    Value: !Ref DBSubnetGroup
+    Export:
+      Name: DBSubnetGroupName
+
+  ECSubnetGroupName:
+    Description: ElastiCache Subnet Group Name
+    Value: !Ref ECSubnetGroup
+    Export:
+      Name: ECSubnetGroupName
 

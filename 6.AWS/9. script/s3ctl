@@ -13,6 +13,7 @@ function put {
 function remove {
     echo `aws s3 rm s3://$S3CTL_BUCKET/$1`
 }
+
 if [[ -z "$S3CTL_BUCKET" ]]
 then
         echo 'Set $S3CTL_BUCKET to your S3 bucket name.'
