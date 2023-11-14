@@ -1,0 +1,51 @@
+---
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: Main Stack with Nested Stacks
+
+Resources:
+
+  VpcStack:
+    Type: AWS::CloudFormation::Stack
+    Properties:
+      TemplateURL: https://cf-templates-1qphvpgib9i54-eu-north-1.s3.eu-north-1.amazonaws.com/vpc.yml
+
+  SecurityGroupStack:
+    Type: AWS::CloudFormation::Stack
+    DependsOn:
+      - VpcStack
+    Properties:
+      TemplateURL: https://cf-templates-1qphvpgib9i54-eu-north-1.s3.eu-north-1.amazonaws.com/sg.yml
+
+  RSAStack:
+    Type: AWS::CloudFormation::Stack
+    Properties:
+      TemplateURL: https://cf-templates-1qphvpgib9i54-eu-north-1.s3.eu-north-1.amazonaws.com/rsa.yml
+
+  ELBStack:
+    Type: AWS::CloudFormation::Stack
+    DependsOn:
+      - SecurityGroupStack
+    Properties:
+      TemplateURL: https://cf-templates-1qphvpgib9i54-eu-north-1.s3.eu-north-1.amazonaws.com/elb.yml
+
+  ASGStack:
+    Type: AWS::CloudFormation::Stack
+    DependsOn:
+      - ELBStack
+    Properties:
+      TemplateURL: https://cf-templates-1qphvpgib9i54-eu-north-1.s3.eu-north-1.amazonaws.com/asg.yml
+
+  RDSStack:
+    Type: AWS::CloudFormation::Stack
+    DependsOn:
+      - SecurityGroupStack
+    Properties:
+      TemplateURL: https://cf-templates-1qphvpgib9i54-eu-north-1.s3.eu-north-1.amazonaws.com/rds.yml
+
+  ElastiCacheStack:
+    Type: AWS::CloudFormation::Stack
+    DependsOn:
+      - SecurityGroupStack
+    Properties:
+      TemplateURL: https://cf-templates-1qphvpgib9i54-eu-north-1.s3.eu-north-1.amazonaws.com/elasticache.yml

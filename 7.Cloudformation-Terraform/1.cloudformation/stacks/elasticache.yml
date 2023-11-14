@@ -1,0 +1,36 @@
+---
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: ElactiCache
+
+Resources:
+
+  Redis:
+    Type: AWS::ElastiCache::CacheCluster
+    Properties:
+      ClusterName: 'cf-redis'
+      CacheNodeType: 'cache.t4g.micro'
+      Engine: 'redis'
+      NumCacheNodes: 1
+      Port: 6379
+      CacheSubnetGroupName:
+        Fn::ImportValue:
+          ECSubnetGroupName
+      VpcSecurityGroupIds:
+        - Fn::ImportValue:
+            RedisSGId
+
+  MemCached:
+    Type: AWS::ElastiCache::CacheCluster
+    Properties:
+      ClusterName: 'cf-memcached'
+      CacheNodeType: 'cache.t4g.micro'
+      Engine: 'memcached'
+      NumCacheNodes: 1
+      Port: 11211
+      CacheSubnetGroupName:
+        Fn::ImportValue:
+          ECSubnetGroupName
+      VpcSecurityGroupIds:
+        - Fn::ImportValue:
+            MemcachedSGId

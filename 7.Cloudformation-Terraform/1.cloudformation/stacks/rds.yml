@@ -1,0 +1,26 @@
+---
+AWSTemplateFormatVersion: "2010-09-09"
+
+Description: RDS
+
+Resources:
+
+  DB:
+    Type: AWS::RDS::DBInstance
+    Properties:
+      DBInstanceIdentifier: 'cf-psql-db'
+      DBInstanceClass: 'db.t3.micro'
+      Engine: 'postgres'
+      EngineVersion: '15.3'
+      DBSubnetGroupName:
+        Fn::ImportValue:
+          DBSubnetGroupName
+      VPCSecurityGroups:
+        - Fn::ImportValue:
+            DBSGId
+      StorageType: 'gp2'
+      AllocatedStorage: 20
+      Port: 5432
+      MasterUsername: 'postgres'
+      MasterUserPassword: 'postgres'
+      BackupRetentionPeriod: 7
