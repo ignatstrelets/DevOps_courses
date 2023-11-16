@@ -60,3 +60,9 @@ jk_notes
 /7.Cloudformation-Terraform/1.cloudformation/id_rsa.pub
 /10.Monitoring/prometheus.log
 /10.Monitoring/alert.backup
+/10.Monitoring/kube-stack.prometheus.configmap.backup
+/10.Monitoring/alert.backup.yml
+/10.Monitoring/alerts/alert.yml
+/10.Monitoring/alertmanager.yml
+/10.Monitoring/kube-stack.prometheus.yml.backup
+/10.Monitoring/prometheus.yml
