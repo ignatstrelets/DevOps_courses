@@ -58,3 +58,5 @@ jk_notes
 /7.Cloudformation-Terraform/1.cloudformation/cf-cli
 /9.Terraform-Bash/terraform/AWSCLIV2.pkg
 /7.Cloudformation-Terraform/1.cloudformation/id_rsa.pub
+/10.Monitoring/prometheus.log
+/10.Monitoring/alert.backup
