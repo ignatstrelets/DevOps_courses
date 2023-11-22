@@ -14,10 +14,10 @@
 ##### 6. Wappalyzer: Hide Apache and Nginx Versions
 ###### NOTE: php in task 6 is omitted due to php version is initially hidden 
 
- a) Nginx+Nginx (nginx backend is hidden)
+ a) Nginx+Nginx (nginx frontend and backend versions are hidden)
 ![6. Wappalyzer: Nginx+Nginx](wappalyzer/nginx/wappalyzer-nginx-hidden.png)
 
- b) Nginx+Apache (apache backend is hidden)
+ b) Nginx+Apache (apache backend is hidden; due to unknown reason backend apache is shown as nginx)
 ![6. Wappalyzer: Nginx+Apache](wappalyzer/nginx+apache/wappalyzer-nginx+apache-hidden.png)
 
 ##### 7. Linux
