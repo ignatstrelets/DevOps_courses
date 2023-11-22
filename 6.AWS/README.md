@@ -66,5 +66,18 @@ b) put
 ![asg-overview.png](10.%20autoscaling%20group%2Fasg-overview.png)
 ![asg-elb.png](10.%20autoscaling%20group%2Fasg-elb.png)
 ![asg-scaling.png](10.%20autoscaling%20group%2Fasg-scaling.png)
-##### 11.
-#####
+##### 11. Elastic Beanstalk
+[dockerrun.aws.json](11.%20beanstalk%2Fdockerrun.aws.json)
+###### Test Docker image locally 
+![test-docker-image.png](11.%20beanstalk%2Ftest-docker-image.png)
+###### Setup environment via CloudShell
+![eb-setup-via-cloudshell.png](11.%20beanstalk%2Feb-setup-via-cloudshell.png)
+###### Environment
+![eb-env.png](11.%20beanstalk%2Feb-env.png)
+###### Test connection
+![eb-test.png](11.%20beanstalk%2Feb-test.png)
+##### 12. Jenkins
+[Jenkinsfile](12.%20jenkins%2FJenkinsfile)
+![jenkins-configure-scm.png](12.%20jenkins%2Fjenkins-configure-scm.png)
+![jenkins-path.png](12.%20jenkins%2Fjenkins-path.png)
+![successful-deploy-log.png](12.%20jenkins%2Fsuccessful-deploy-log.png)
