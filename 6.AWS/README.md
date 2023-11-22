@@ -68,7 +68,7 @@ b) put
 ###### Target Scaling: Can't implement Step Scaling via Console due to this option is deprcated (CLI only) 
 ![asg-scaling.png](10.%20autoscaling%20group%2Fasg-scaling.png)
 ##### 11. Elastic Beanstalk
-[dockerrun.aws.json](11.%20beanstalk%2Fdockerrun.aws.json)
+Single-container solution using cloud-native reverse proxy: [dockerrun.aws.json](11.%20beanstalk%2Fdockerrun.aws.json)
 ###### Test Docker image locally 
 ![test-docker-image.png](11.%20beanstalk%2Ftest-docker-image.png)
 ###### Setup environment via CloudShell
