@@ -47,7 +47,7 @@ resource "azurerm_linux_virtual_machine" "VMLU01" {
   location                        = azurerm_resource_group.main.location
   size                            = "Standard_B1s"
   admin_username                  = "adminuser"
-  admin_password                  = "Jy4az89Zb3"
+  admin_password                  = ""
   disable_password_authentication = false
   network_interface_ids           = [
     azurerm_network_interface.vm-1.id
@@ -74,7 +74,7 @@ resource "azurerm_linux_virtual_machine" "VMLU02" {
   location                        = azurerm_resource_group.main.location
   size                            = "Standard_B1s"
   admin_username                  = "adminuser"
-  admin_password                  = "5Vx3h0w7KP"
+  admin_password                  = ""
   disable_password_authentication = false
   network_interface_ids           = [
     azurerm_network_interface.vm-2.id
