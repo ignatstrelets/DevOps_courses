@@ -1,4 +1,4 @@
-# Reports on Vagrant, Docker and Kubernetes initial configuration&usage
+# Reports on Vagrant, Docker and Kubernetes initial configuration and usage
 
 [1. Report on First Steps in Vagrant+VirtualBox](Vagrant/2_1/2_1.md)
 
