@@ -2,7 +2,7 @@
 
 ##### [1. Virtual machine](vm.tf)
 ##### [2. Storage Account](storageAccount.tf)
-#####
-#####
-#####
+##### [3. Application Gateway](applicationGateway.tf)
+##### [4. Traffic](traffic.tf)
+##### [5. App Service](appService.tf)
 
