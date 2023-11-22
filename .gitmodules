@@ -1,0 +1,3 @@
+[submodule "3.Jenkins/jenkins"]
+	path = 3.Jenkins/jenkins
+	url = https://github.com/ignatstrelets/jenkins.git
