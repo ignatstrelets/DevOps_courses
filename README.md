@@ -3,8 +3,8 @@ Ignat Strelets
 
 ### [1.Linux](1.Linux)
 ### [2.Containers-VMs](2.Containers-VMs)
-### [3.Jenkins](3.Jenkins%2Fjenkins)
-### [4.Ansible](4.Ansible%2Fansible-elk)
+### [3.Jenkins (submodule)](3.Jenkins)
+### [4.Ansible (submodule)](4.Ansible)
 ### [5.Extras](5.Extras)
 ### [6.AWS](6.AWS)
 ### [7.Cloudformation-Terraform](7.Cloudformation-Terraform)
