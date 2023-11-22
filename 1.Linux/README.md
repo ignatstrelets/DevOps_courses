@@ -23,4 +23,3 @@ Use 'mtime' syntax to define age of files to be deleted.
 
 (e.g. 4 days old: '4')
 
-(e.g. Newer than 10 days: '-5')
