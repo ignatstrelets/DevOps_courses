@@ -2,7 +2,6 @@
 
 ##### [1. Virtual machine](vm.tf)
 (Refernce from official documentation)
-
 ##### ![from-azure.png](references%2Ffrom-azure.png)
 ##### [2. Storage Account](storageAccount.tf) 
 (Reference)
