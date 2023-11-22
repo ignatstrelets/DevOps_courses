@@ -49,8 +49,22 @@
 ![s3-deletion.png](8.%20cloudfront%20distribution%2Fs3-deletion.png)
 ![s3-rules-overview.png](8.%20cloudfront%20distribution%2Fs3-rules-overview.png)
 ##### 9. Script
-###### Create policy and 
-#####
-#####
-#####
+###### [s3ctl](9.%20script%2Fs3ctl)
+###### Create policy and grant IAM Role to EC2 Instance
+![s3-policy.png](9.%20script%2Fs3-policy.png)
+![add-role.png](9.%20script%2Fadd-role.png)
+###### Test AWS CLI
+a) delete
+![test-delete.png](9.%20script%2Ftest-delete.png)
+![test-delete-check.png](9.%20script%2Ftest-delete-check.png)
+b) put
+![test-put.png](9.%20script%2Ftest-put.png)
+![test-put-check.png](9.%20script%2Ftest-put-check.png)
+###### Test script
+![script-test.png](9.%20script%2Fscript-test.png)
+##### 10. Autoscaling Group
+![asg-overview.png](10.%20autoscaling%20group%2Fasg-overview.png)
+![asg-elb.png](10.%20autoscaling%20group%2Fasg-elb.png)
+![asg-scaling.png](10.%20autoscaling%20group%2Fasg-scaling.png)
+##### 11.
 #####
