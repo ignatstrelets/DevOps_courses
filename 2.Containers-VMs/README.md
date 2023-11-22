@@ -1,6 +1,6 @@
 # Reports on Vagrant, Docker and Kubernetes initial configuration and usage
 
-###### Logs, configs, etc. are stored in directories "2_<task_number>"
+###### Logs, configs, etc. are stored in directories along with readme files
 
 [1. Report on First Steps in Vagrant+VirtualBox](Vagrant/2_1/2_1.md)
 

@@ -65,6 +65,7 @@ b) put
 ##### 10. Autoscaling Group
 ![asg-overview.png](10.%20autoscaling%20group%2Fasg-overview.png)
 ![asg-elb.png](10.%20autoscaling%20group%2Fasg-elb.png)
+###### Can't implement Step Scaling via Console due to this option is deprcated
 ![asg-scaling.png](10.%20autoscaling%20group%2Fasg-scaling.png)
 ##### 11. Elastic Beanstalk
 [dockerrun.aws.json](11.%20beanstalk%2Fdockerrun.aws.json)
