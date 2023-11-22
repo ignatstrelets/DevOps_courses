@@ -1,3 +1,6 @@
 [submodule "3.Jenkins/jenkins"]
 	path = 3.Jenkins/jenkins
 	url = https://github.com/ignatstrelets/jenkins.git
+[submodule "4.Ansible/ansible-elk"]
+	path = 4.Ansible/ansible-elk
+	url = https://github.com/ignatstrelets/ansible-elk.git
