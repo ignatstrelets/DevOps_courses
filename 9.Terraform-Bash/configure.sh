@@ -2,7 +2,7 @@
 
 #Host OS: CentOS 8
 
-#NOTE: add your custom data
+#NOTE: add your custom credential values before running script
 
 sudo sh -c """
 yum -y update
