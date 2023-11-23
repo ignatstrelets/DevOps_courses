@@ -2,6 +2,8 @@
 
 #Host OS: CentOS 8
 
+# This script runs
+
 #NOTE: add your custom credential values before running script
 
 sudo sh -c """
@@ -145,7 +147,7 @@ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.pha
 php wp-cli.phar --info
 chmod +x wp-cli.phar
 mv wp-cli.phar /usr/local/bin/wp
-wp core install --url=localhost/wordpress --title=Example --admin_user=supervisor --admin_password=strongpassword --admin_email=info@example.com
+wp core install --url=localhost/wordpress --title=Example --admin_user=<username> --admin_password=<password> --admin_email=<mail@example.com>
 
 systemctl restart httpd mysqld
 
