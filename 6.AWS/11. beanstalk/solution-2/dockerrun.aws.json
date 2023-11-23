@@ -1,13 +1,35 @@
-{"AWSEBDockerrunVersion": 2
-"containerDefinitions": [
 {
-"name": "nginx-reverse-proxy",
-"image": "ignatstrelets/nginx-reverse-proxy",
-"essential": true,
-"memory": 128,
-"portMappings": [
-{
-"hostPort": 80,
-"containerPort": 80
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "nginx-reverse-proxy",
+      "image": "ignatstrelets/nginx-reverse-proxy",
+      "essential": true,
+      "memory": 128,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80
+        }
+      ]
+    },
+    {
+      "name": "golang-hello-world",
+      "image": "qorbani/golang-hello-world",
+      "essential": true,
+      "memory": 128,
+      "portMappings": [
+        {
+          "hostPort": 3000,
+          "containerPort": 3000
+        }
+      ],
+      "environment": [
+        {
+          "name": "PORT",
+          "value": "3000"
+        }
+      ]
+    }
+  ]
 }
-],
