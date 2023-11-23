@@ -69,6 +69,7 @@ b) put
 ![asg-scaling.png](10.%20autoscaling%20group%2Fasg-scaling.png)
 ##### 11. Elastic Beanstalk
 Single-container solution using cloud-native reverse proxy: [dockerrun.aws.json](11.%20beanstalk%2Fdockerrun.aws.json)
+Multi-container solution: [solution](11.%20beanstalk%2Fsolution-2)
 ###### Test Docker image locally 
 ![test-docker-image.png](11.%20beanstalk%2Ftest-docker-image.png)
 ###### Setup environment via CloudShell
