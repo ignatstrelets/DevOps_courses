@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#Host OS: CentOS 8
+# Host OS: CentOS 8
 
-# This script runs
+# This script runs with root privileges
 
-#NOTE: add your custom credential values before running script
+# NOTE: add your custom credential values before running script
 
 sudo sh -c """
 yum -y update
