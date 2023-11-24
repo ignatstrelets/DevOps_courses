@@ -30,3 +30,10 @@
 ```
     helm install kube-prometheus-stack .
 ```
+
+##### Test
+```
+    kubectl get svc
+    <...>
+    kubectl port-forward deployment/kube-prometheus-stack-grafana 3000
+```
