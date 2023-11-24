@@ -14,3 +14,6 @@
 ##### 4. Discover metrics change on Dashboard
 ![Decrease and Increate Number of Pods.png](4%2FDecrease%20and%20Increate%20Number%20of%20Pods.png)
 ![Decrease and Increase shown on graph.png](4%2FDecrease%20and%20Increase%20shown%20on%20graph.png)
+
+##### [Report on adding custom Grafana dashboard to kube-prometheus-stack helm chart](helm/README.md)
+
