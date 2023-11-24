@@ -37,3 +37,4 @@
     <...>
     kubectl port-forward deployment/kube-prometheus-stack-grafana 3000
 ```
+![custom-k8s.png](custom-k8s.png)

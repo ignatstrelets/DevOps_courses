@@ -6,9 +6,9 @@ metadata:
   namespace: {{ template "kube-prometheus-stack-grafana.namespace" . }}
   name: {{ printf "%s-%s" (include "kube-prometheus-stack.fullname" $) "custom-k8s" | trunc 63 | trimSuffix "-" }}
   annotations:
-  {{ toYaml .Values.grafana.sidecar.dashboards.annotations | indent 4 }}
-labels:
-  {{- if $.Values.grafana.sidecar.dashboards.label }}
+{{ toYaml .Values.grafana.sidecar.dashboards.annotations | indent 4 }}
+  labels:
+    {{- if $.Values.grafana.sidecar.dashboards.label }}
     {{ $.Values.grafana.sidecar.dashboards.label }}: {{ ternary $.Values.grafana.sidecar.dashboards.labelValue "1" (not (empty $.Values.grafana.sidecar.dashboards.labelValue)) | quote }}
     {{- end }}
     app: {{ template "kube-prometheus-stack.name" $ }}-grafana
@@ -509,7 +509,7 @@ data:
         },
         "timepicker": {},
         "timezone": "",
-        "title": "preset1",
+        "title": "custom-k8s",
         "uid": "da029259-a168-48bd-ace7-3414b96b2ea5",
         "version": 2,
         "weekStart": ""
