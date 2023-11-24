@@ -1,7 +1,7 @@
 # Report on adding custom Grafana dashboard to kube-prometheus-stack helm chart
 
 
-##### Export Grafana Dashboard as JSON
+##### Export existing Grafana Dashboard as JSON
 
 [custom-template.json](custom-template.json)
 
@@ -22,6 +22,11 @@
     helm dependency build
     helm repo update
     cd ~/helm-charts/charts/kube-prometheus-stack
-    elm template kube-prometheus-stack . --validate > rendered-template.yaml
+    helm template kube-prometheus-stack . --validate > rendered-template.yaml
 ```
+[rendered-template.yaml](rendered-template.yaml)
 
+##### Deploy custom Helm Chart
+```
+    helm install kube-prometheus-stack .
+```
