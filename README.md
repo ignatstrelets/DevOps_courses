@@ -11,4 +11,4 @@ Ignat Strelets
 ### [8. Azure](8.Azure)
 ### [9. Terraform-Bash](9.Terraform-Bash)
 ### [10. Monitoring](10.Monitoring)
-### [11. .NET CI/CD + Iac](11..NET-CI-CD-Iac)
+### [11. .NET CI/CD + IaC](11..NET-CI-CD-IaC)
