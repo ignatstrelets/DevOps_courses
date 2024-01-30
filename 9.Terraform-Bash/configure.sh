@@ -2,11 +2,11 @@
 
 # Host OS: CentOS 8
 
-# This script runs with root privileges
+# This script should be run with root privileges
 
 # NOTE: add your custom credential values before running script
 
-sudo sh -c """
+
 yum -y update
 
 yum -y install httpd
@@ -252,6 +252,6 @@ EOF
 systemctl daemon-reload
 systemctl enable nodehello
 systemctl start nodehello
-"""
+
 
 
