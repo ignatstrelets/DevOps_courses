@@ -1,10 +1,11 @@
-# DevOps Courses
-Ignat Strelets
+# Ignat Strelets – DevOps Skills Portfolio
+
+#### Example
 
 ### [1. Linux System Administration, Bash Scripting](1.Linux)
-### [2. Containers-VMs](2.Containers-VMs)
-### [3. Jenkins (submodule)](3.Jenkins)
-### [4. Ansible (submodule)](4.Ansible)
+### [2. Docker, Docker Compose, Kubernetes, Vagrant](2.Containers-VMs)
+### [3. Jenkins CI/CD Pipeline for containerized app (submodule)](3.Jenkins)
+### [4. Configuration of secure ELK stack using Hashicorp Vault for AWS via Ansible (submodule)](4.Ansible)
 ### [5. Extras](5.Extras)
 ### [6. AWS](6.AWS)
 ### [7. Cloudformation-Terraform](7.Cloudformation-Terraform)
