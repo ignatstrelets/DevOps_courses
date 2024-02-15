@@ -12,4 +12,4 @@
 ### [8. Azure Infrastructure as a Code using Terraform](8.Azure)
 ### [9. Deployment of integration of Wordpress and Node.js via Bash Stript](9.Terraform-Bash)
 ### [10. Deployment of pre-configured Prometheus+Grafana monitoring stack with alerting using Helm ](10.Monitoring)
-### [11. CI/CD Pipeline for .NET Web App for AWS using Github Actons and IaC via Terraform, AMI creation and backup, Grafana Loki monitoring setup. An alternative serverless solut](11..NET-CI-CD-IaC)
+### [11. CI/CD Pipeline for .NET Web App for AWS using Github Actions, IaC via Terraform, AMI creation and backup via Packer, Grafana Loki monitoring setup. Also provided an alternative (serverless) solution using AWS Lambda using Github Actions for CI and custom Python Pulumi infrastructure script for CD](11..NET-CI-CD-IaC)
