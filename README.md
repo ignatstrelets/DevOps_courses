@@ -1,7 +1,7 @@
 # DevOps Courses
 Ignat Strelets
 
-### [1. Linux](1.Linux)
+### [1. Linux System Administration, Bash Scripting](1.Linux)
 ### [2. Containers-VMs](2.Containers-VMs)
 ### [3. Jenkins (submodule)](3.Jenkins)
 ### [4. Ansible (submodule)](4.Ansible)
