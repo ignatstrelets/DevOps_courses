@@ -6,7 +6,7 @@
 ### [2. Docker, Docker Compose, Kubernetes, Vagrant](2.Containers-VMs)
 ### [3. Jenkins CI/CD Pipeline for containerized app using Docker (submodule)](3.Jenkins)
 ### [4. Configuration of secure ELK monitoring stack using Hashicorp Vault for AWS via Ansible (submodule)](4.Ansible)
-### [5. Configuration of Apache, Nginx, Wordpress Servers](5.Extras)
+### [5. Configuration of Apache, Nginx, Wordpress Servers, more Linux Administration and Bash Scripting](5.Extras)
 ### [6. AWS EC2, RDS, Networking, ElastiCache (Redis, Memcached), Elastic Beanstalk (json, Docker Compose), Autoscaling, S3, Cloudfront, ELB, custom tool based on AWS CLI for S3](6.AWS)
 ### [7. AWS Infrastructure as a Code: Cloudformation, Terraform](7.Cloudformation-Terraform)
 ### [8. Azure Infrastructure as a Code using Terraform](8.Azure)
