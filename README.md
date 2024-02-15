@@ -1,6 +1,6 @@
-# Ignat Strelets – DevOps Skills Portfolio
+# Ignat Strelets 
+## DevOps Skills Portfolio
 
-#### Example
 
 ### [1. Linux System Administration, Bash Scripting](1.Linux)
 ### [2. Docker, Docker Compose, Kubernetes, Vagrant](2.Containers-VMs)
