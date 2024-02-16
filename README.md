@@ -1,6 +1,7 @@
 # Ignat Strelets 
 ## DevOps Skills Portfolio
 
+#### Here are solutions to a variety of problems across the entire technology stack. This repository is constantly updated with new solutions.
 
 ### [1. Linux System Administration, Bash Scripting](1.Linux)
 ### [2. Docker, Docker Compose, Kubernetes, Vagrant](2.Containers-VMs)
